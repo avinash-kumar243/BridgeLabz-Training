@@ -1,4 +1,4 @@
-// Writing a program to check its spring season or not
+// Writing a program to print counter till one using while loop
 import java.util.Scanner;
 public class NumberCountDown {
 	public static void main(String args[]) {
