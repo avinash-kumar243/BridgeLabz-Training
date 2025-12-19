@@ -11,8 +11,6 @@ public class CalculatorUsingSwitch {
 		System.out.println("Enter a string ");
 		String op = sc.next();
 		
-		//for(int i=1; i<
-		
 		switch(op) {
 			case "+": 
 				System.out.println("sum is " + (first + second));
@@ -26,8 +24,12 @@ public class CalculatorUsingSwitch {
 				System.out.println("Multiplication is " + (first * second));
 				break;
 				
-			default: 
+			case "/": 
 				System.out.println("Division is " + (first / second));
+				break;
+				
+			default:
+				System.out.println("Invalid Operator");
 		}
 	}
 }
