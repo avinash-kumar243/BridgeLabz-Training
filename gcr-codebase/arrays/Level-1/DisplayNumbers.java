@@ -1,6 +1,6 @@
 // Writing a program to display numbers and calculate sum of all numbers 
 import java.util.Scanner;
-public class DisplayNumbers {
+public class DisplayAndCalulateSum {
 	public static void main(String args[]) { 
 		Scanner sc = new Scanner(System.in);
 		
