@@ -21,4 +21,4 @@ public class DisplayNumbers {
 		}
 		System.out.println("Sum of all numbers are : " + total);
 	}
-}
+} 
