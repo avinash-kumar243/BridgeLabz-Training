@@ -1,4 +1,4 @@
-// Writing a program to calculate the grade based on the percentage of obtained marks
+// Writing a program to calculate the grade based on the percentage of obtained marks	
 import java.util.Scanner;
 public class GradeDeclaration {
 	public static void main(String args[]) { 
