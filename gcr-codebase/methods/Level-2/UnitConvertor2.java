@@ -1,5 +1,5 @@
 // Writing a program to implement UnitConvertor program
-class UnitConvertor2 {
+class Conversion {
 	// Writing a method to convert yards to feet
 	public static double convertYardsToFeet(double yards) {
 		double yards2feet = 3;
