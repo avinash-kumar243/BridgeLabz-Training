@@ -1,7 +1,7 @@
 // Writing a program to find the maximum number of handshakes among students.
 import java.util.Scanner;
 public class HandshakesCount {
-	// Calculation of simple interest
+	// Calculation of maximum number of handshakes among students.
 	public int maxHandShake(int numberOfStudents) {
 		return (numberOfStudents * (numberOfStudents - 1)) / 2;
 	}
