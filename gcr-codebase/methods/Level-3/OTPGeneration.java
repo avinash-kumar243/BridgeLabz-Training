@@ -1,4 +1,4 @@
-// Writing a program to generate a six-digit OTP number
+// Writing a program to generate a six-digit OTP number 
 public class OTPGeneration {
     // Method to generate a 6-digit OTP using Math.random()
     public static int generateOTP() {
