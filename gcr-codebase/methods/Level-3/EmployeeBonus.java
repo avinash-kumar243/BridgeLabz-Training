@@ -27,7 +27,7 @@ public class EmployeeBonus {
         return result;
     }
 
-	// Displaying the result
+	// Displaying the 
     public static void display(double[][] result) {
         double totalOld = 0, totalBonus = 0, totalNew = 0;
 
