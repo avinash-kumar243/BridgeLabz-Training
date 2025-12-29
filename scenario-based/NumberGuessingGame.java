@@ -12,7 +12,7 @@ public class NumberGuessingGame {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		
-		int guessNum = 72;
+		int guessNum = (int)(Math.random() * 99) + 1;
 		
 		int st = 1, end = 100, num = 0;
 		int attempt = 0;
