@@ -9,11 +9,13 @@ Take the user's mobile operator and amount.
 import java.util.Scanner;
 public class PhoneRechargeSimulator {
 	
+	static Scanner sc = new Scanner(System.in);
+	
+	
 	// Method to do the recharge
-	public static void recharge(String operator, int plans[], int balance) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("\n\n-----------------" + operator + " Active Plans ---------------\n");
+	public static void rechargePhone(String operator, int plans[], int balance) {
+				
+		System.out.println("\n\n----------------- " + operator + " Active Plans ---------------\n");
 		System.out.println("Choose a valid plan : \n");
 		
 		int choose = 1;
@@ -35,12 +37,24 @@ public class PhoneRechargeSimulator {
 		if(isSufficientBalance(balance, plans[choise - 1])) {
 			System.out.println("\nCongratulations! Recharge successfull");
 			balance -= plans[choise - 1];
-			System.out.println("Current balance is : " + balance);
+			System.out.println("Current balance is : " + balance + "\n");
 		} else {
 			balance = addBalance(balance);
-			recharge(operator, plans, balance);
+			rechargePhone(operator, plans, balance);
+		}
+		
+		System.out.println("Do you want to do recharge again?");
+		String request = sc.next();
+		
+		if(request.equals("y") || request.equals("yes") || request.equals("ya") || request.equals("Y") || request.equals("Yes") || request.equals("YES")) {
+			System.out.println("\n-----------------------------------------------------------------------------\n");
+			recharge(balance);
+		} else {
+			System.out.println("\n\nThank You for using our recharge services.\n");
+			System.exit(0);
 		}
 	}
+	
 	
 	// Method to add balance
 	public static int addBalance(int balance) {
@@ -54,19 +68,14 @@ public class PhoneRechargeSimulator {
 		return balance + money;
 	}
 	
+	
 	// Method to check for sufficient balance
 	public static boolean isSufficientBalance(int balance, int requiredBalance) {
 		return balance >= requiredBalance;
 	}
 	
-	public static void main(String args[]) {		
-		System.out.println("-------------------------------------------------------");
-		System.out.println("----------------Phone Recharge Simulator---------------");
-		System.out.println("-------------------------------------------------------\n");
-		
-		Scanner sc = new Scanner(System.in);
-		
-		int balance = 0;
+	
+	public static void recharge(int balance) {
 		
 		// Recharge Plans
 		int jioPlans[] = {249, 299, 349, 579, 729, 899, 999};
@@ -74,7 +83,7 @@ public class PhoneRechargeSimulator {
 		int viPlans[] = {199, 299, 579};
 		int	bsnlPlans[] = {199, 299, 399};
 		
-		System.out.println("Select Operator");
+		System.out.println("\nSelect Operator");
 		
 		// Operators
 		System.out.println("1 - Jio");
@@ -92,10 +101,21 @@ public class PhoneRechargeSimulator {
 
 		// calling methods for the recharge 
 		switch(operator) {
-			case 1 -> recharge("jio", jioPlans, balance);
-			case 2 -> recharge("airtel", airtelPlans, balance);
-			case 3 -> recharge("vi", viPlans, balance);
-			case 4 -> recharge("bsnl", bsnlPlans, balance);
+			case 1 -> rechargePhone("jio", jioPlans, balance);
+			case 2 -> rechargePhone("airtel", airtelPlans, balance);
+			case 3 -> rechargePhone("vi", viPlans, balance);
+			case 4 -> rechargePhone("bsnl", bsnlPlans, balance);
 		}
+	}
+	
+	
+	public static void main(String args[]) {		
+		System.out.println("-------------------------------------------------------");
+		System.out.println("----------------Phone Recharge Simulator---------------");
+		System.out.println("-------------------------------------------------------\n");
+
+		int balance = 0;
+
+		recharge(balance);
 	}
 }
