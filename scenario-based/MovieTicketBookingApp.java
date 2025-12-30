@@ -51,45 +51,22 @@ public class MovieTicketBookingApp {
 			
 			System.out.println("\n");
 
-			switch(movieType) {
-				case 1 -> {
-					if(seatType == 1) {
-						if(snacksType == 1) System.out.println("Ticket has been booked for Action Movie -> Seat type - Gold -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Action Movie -> Seat type - Gold -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Action Movie -> Seat type - Gold -> Snacks - Soft Drinks");
-					} else if(seatType == 2){
-						if(snacksType == 1) System.out.println("Ticket has been booked for Action Movie -> Seat type - Silver -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Action Movie -> Seat type - Silver -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Action Movie -> Seat type - Silver -> Snacks - Soft Drinks");
-					}
-				}
-				
-				case 2 -> {
-					if(seatType == 1) {
-						if(snacksType == 1) System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Gold -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Gold -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Gold -> Snacks - Soft Drinks");
-					} else {
-						if(snacksType == 1) System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Silver -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Silver -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Comedy Movie -> Seat type - Silver -> Snacks - Soft Drinks");
-					}
-				}
-				
-				case 3 -> {
-					if(seatType == 1) {
-						if(snacksType == 1) System.out.println("Ticket has been booked for Horror Movie -> Seat type - Gold -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Horror Movie -> Seat type - Gold -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Horror Movie -> Seat type - Gold -> Snacks - Soft Drinks");
-					} else {
-						if(snacksType == 1) System.out.println("Ticket has been booked for Horror Movie -> Seat type - Silver -> Snacks - Popcorn");
-						else if(snacksType == 2) System.out.println("Ticket has been booked for Horror Movie -> Seat type - Silver -> Snacks - Candy");
-						else System.out.println("Ticket has been booked for Horror Movie -> Seat type - Silver -> Snacks - Soft Drinks");
-					}
-				}
-				
-				default -> System.out.println("Invalid Choise! Try again");
-			}
+			String movie = switch(movieType) {
+				case 1 -> "Action movie";
+				case 2 -> "Comedy movie";
+				case 3 -> "Horror movie";
+				default -> "Unknown";
+			};
+			
+			String seat = seatType == 1 ? "Gold" : "Silver";
+			
+			String snacks = switch(snacksType) {
+				case 1 -> "Popcorn";
+				case 2 -> "Candy";
+				default -> "Soft Drinks";
+			};
+			
+			System.out.println("Movie ticket has been booked for - " + movie + ", seatType is - " + seat + " and snacks is - " + snacks); 
 			
 			System.out.println("\nDo you want to terminate program. Tell yes or no");
 			String option = sc.next();
