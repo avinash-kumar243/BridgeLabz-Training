@@ -15,10 +15,10 @@ public class SchoolBusAttendenceSystem {
 		int idx = 0;
 		
 		// Loop to ask students attendence
+		System.out.println("Enter \"P\" for Present and \"A\" for Absent");
 		for(String student : students) {
 			System.out.println("\nIs " + student + " Present?");
-			System.out.println("Enter \"P\" for Present and \"A\" for Absent");
-			
+						
 			char ch = sc.next().charAt(0);
 			ch = Character.toLowerCase(ch);
 			
@@ -69,7 +69,12 @@ public class SchoolBusAttendenceSystem {
 	}
 	
 	// main method 
-	public static void main(String args[]) {		
+	public static void main(String args[]) {
+		
+		System.out.println("\n------------------------------------------------------------------");
+		System.out.println("------------------ School Bus Attendance System ------------------");
+		System.out.println("------------------------------------------------------------------\n\n");
+		
 		String students[] = {"Komal", "Deepak", "Sonu", "Deepika", "Axar", "Patel", "Gautam", "Surbhi", "Jiya", "Anjali"};
 		char attendence[] = new char[10];
 		
