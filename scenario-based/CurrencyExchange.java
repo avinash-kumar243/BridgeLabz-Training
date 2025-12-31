@@ -26,13 +26,18 @@ public class CurrencyExchange {
 			
 			int choose = sc.nextInt();
 			
+			while(choose < 0 || choose > 5) {
+				System.out.println("\nInvalid Choise! Please enter your choice again");
+				choose = sc.nextInt();
+			}
+			
 			switch(choose) {
 				case 1 -> System.out.println("\nThe comnversion of " + inr + " INR into USD is : " + (rate[0] * inr));
 				case 2 -> System.out.println("\nThe comnversion of " + inr + " INR into EURO is : " + (rate[1] * inr));
 				case 3 -> System.out.println("\nThe comnversion of " + inr + " INR into JPY is : " + (rate[2] * inr));
 				case 4 -> System.out.println("\nThe comnversion of " + inr + " INR into RUB is : " + (rate[3] * inr));
 				case 5 -> System.out.println("\nThe comnversion of " + inr + " INR into CNY is : " + (rate[4] * inr));
-				default -> System.out.println("\nInvalid Choise!!!");
+				default -> System.out.println("\nInvalid Choice!!!");
 			}
 			
 			System.out.println("\nDO you want again to convert currency? Yes or No.\n");
