@@ -31,16 +31,13 @@ public class DigitalWatchSimulator {
 			
 			System.out.println("\n\n---------------");
 			for(int j = 0; j < 60; j++) {
-				if(i == 0 && j == 0) {
-					System.out.println("It's 12 O'clock");
-					System.out.println("---------------\n\n");
-				} else if(j == 0) {
+				if(j == 0) {
 					System.out.println("It's " + i + " O'clock ");
 					System.out.println("---------------\n\n");
 				}	
 				
-				if(i == 0 && j <= 9) System.out.printf("12 : 0%d \n", j);
-				else if(i == 0) System.out.printf("12 : %d \n", j);
+				if(i == 0 && j <= 9) System.out.printf("00 : 0%d \n", j);
+				else if(i == 0) System.out.printf("00 : %d \n", j);
 				else if(j <= 9) System.out.printf("%d : 0%d \n", i, j);
 				else System.out.printf("%d : %d \n", i, j);
 			}
