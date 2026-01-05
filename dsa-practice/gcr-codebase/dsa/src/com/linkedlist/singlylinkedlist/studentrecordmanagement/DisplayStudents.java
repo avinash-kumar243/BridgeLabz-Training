@@ -14,4 +14,12 @@ public class DisplayStudents {
 			student = student.next;
 		}
 	}
+
+	public static void displayStudent(Student result) {
+		System.out.println("Student details are :- \n");
+		System.out.println("Student name : " + result.name);
+		System.out.println("Student roll number : " + result.roll);
+		System.out.println("Student age : " + result.age);
+		System.out.println("Student grade : " + result.grade);
+	}
 }

@@ -17,18 +17,22 @@ public class Main {
 		System.out.println("Student deleted.\n");
 		DisplayStudents.display(removedStudent);
 		
+		
 		System.out.println("\n------ Search Student --------\n");
 		Student result = SearchStudent.searchByRoll(25, head);
 
 		if(result != null) {
 		    System.out.println("Student Found:");
-		    DisplayStudents.display(result);
+     	    // DisplayStudents.display(result);
+		    DisplayStudents.displayStudent(result);
+		    
 		} else {
 		    System.out.println("Student not found.");
 		}
+		
 
 		System.out.println("\n------ Update Grade --------\n");
-		boolean updated = UpdateGrade.updateGrade(56, "A", head);
+		boolean updated = UpdateGrade.updateGrade(56, "E", head);
 
 		if(updated) {
 		    System.out.println("Grade updated successfully.");
