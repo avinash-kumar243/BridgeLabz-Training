@@ -229,3 +229,14 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+
+## 🗓 Day 16 – leetcode Practice
+*(Date: 06-Jan-2026)*
+
+- Practiced in Leetcode.
+- Solved problem related to Array
+  - Combination Sum
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
