@@ -324,8 +324,8 @@ BridgeLabz-Training/
 - commited and pushed all changes Successfully.
 
 🔗 *Code Link:*
-[Day 19 - Scenario Based Problems(oops)] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+[Day 19 - Scenario Based Problems(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
-[Day 19 - LeetCode Practice] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+[Day 19 - LeetCode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
 
-[Day 19 - Linear and Binary Search] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
+[Day 19 - Linear and Binary Search](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
