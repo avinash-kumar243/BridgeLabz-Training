@@ -268,3 +268,47 @@ BridgeLabz-Training/
 [Day 15 – Scenario-based problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/scenario-based)
 
 [Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
+
+## 🗓 Day 16 - Encapsulation, Polymorphism, Interface & Abstract Classes , Scenario based problem(OOPS) & DSA
+*(Date: 02-Jan-2026)*
+
+- Studied the Encapsulation, Polymorphism, Interface & Abstract Classes
+- Solved logical problems such as 
+  - Banking System, Hospital Management System
+- Solved Scenario based problem
+  - E-Wallet Application 
+- Studied LinkedList  
+- Committed and pushed solutions to the repository
+
+🔗 *Code Link:*  
+[Day 16 - Encapsulation, Polymorphism, Interface & Abstract Classes](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com)
+
+[Day 16 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com)
+
+## 🗓 Day 17 – Stack , Queue, HashMap and Hashing Function, Scenario based problem(oops)
+*(Date: 03-Jan-2026)*
+
+- Studied Stack , Queue, HashMap and Hashing Function
+- Solved problem related to Stack & Queue
+- Solved Scenario based problem
+  - CabbyGo, MyBank
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 17 – Stack , Queue, HashMap and Hashing Function](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/stackqueue)
+
+[Day 17 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 18 – leetcode Practice, Scenario based problem(oops), Sorting Algorithms
+*(Date: 05-Jan-2026)*
+
+- Solved Scenario based problem
+  - College Information System, Grocery Shopping App
+- Studied Bubble Sort, Insertion Sort Merge Sort, and Quick Sort
+- Solved problem related to Sorting Algorithm  
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 18 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 18 – Sorting Algorithms](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/sorting)
