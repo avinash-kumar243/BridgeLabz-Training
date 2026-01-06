@@ -299,7 +299,7 @@ BridgeLabz-Training/
 
 [Day 17 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
-## 🗓 Day 18 – leetcode Practice, Scenario based problem(oops), Sorting Algorithms
+## 🗓 Day 18 – Scenario based problem(oops), Sorting Algorithms
 *(Date: 05-Jan-2026)*
 
 - Solved Scenario based problem
@@ -312,3 +312,20 @@ BridgeLabz-Training/
 [Day 18 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 18 – Sorting Algorithms](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/sorting)
+
+## 🗓 Day 19 - LeetCode Practice, Scenario based Problems(oops), Linear and Binary Search
+*(Date: 06-Jan-2026)*
+
+- Solved problems on LeetCode related to Array 
+  - Combination Sum
+- Studied Linear and Binary search and solved problems based on it
+- Solved Scenario based Problems
+  - Personal Fitness Tracker App, Virtual Pet Care App,  Event Management Platform
+- commited and pushed all changes Successfully.
+
+🔗 *Code Link:*
+[Day 19 - Scenario Based Problems(oops)] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 19 - LeetCode Practice] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+
+[Day 19 - Linear and Binary Search] (https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
