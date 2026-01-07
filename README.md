@@ -239,7 +239,7 @@ BridgeLabz-Training/
 - Committed and pushed all changes successfully.
 
 🔗 *Code Link:*  
-[Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+[Day 16 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
 
 ## 🗓 Day 17 – leetcode Practice
 *(Date: 07-Jan-2026)*
@@ -250,5 +250,5 @@ BridgeLabz-Training/
 - Committed and pushed all changes successfully.
 
 🔗 *Code Link:*  
-[Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+[Day 17 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
 
