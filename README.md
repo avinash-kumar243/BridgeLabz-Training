@@ -240,3 +240,15 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+
+## 🗓 Day 17 – leetcode Practice
+*(Date: 06-Jan-2026)*
+
+- Practiced in Leetcode.
+- Solved problem related to Array
+  - Peak Element, Find minimum in sorted but roteted array
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+
