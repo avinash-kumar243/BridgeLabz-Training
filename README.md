@@ -281,7 +281,7 @@ BridgeLabz-Training/
 - Committed and pushed solutions to the repository
 
 🔗 *Code Link:*  
-[Day 16 - Encapsulation, Polymorphism, Interface & Abstract Classes](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com)
+[Day 16 - Encapsulation, Polymorphism, Interface & Abstract Classes](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation)
 
 [Day 16 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com)
 
@@ -341,6 +341,6 @@ BridgeLabz-Training/
 - commited and pushed all changes Successfully.
 
 🔗 *Code Link:*
-[Day 19 - Scenario Based Problems(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+[Day 20 - Scenario Based Problems(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
-[Day 19 - LeetCode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+[Day 20 - LeetCode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
