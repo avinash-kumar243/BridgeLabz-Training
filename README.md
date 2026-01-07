@@ -242,7 +242,7 @@ BridgeLabz-Training/
 [Day 15 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
 
 ## 🗓 Day 17 – leetcode Practice
-*(Date: 06-Jan-2026)*
+*(Date: 07-Jan-2026)*
 
 - Practiced in Leetcode.
 - Solved problem related to Array
