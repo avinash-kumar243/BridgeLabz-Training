@@ -1,5 +1,6 @@
 package com.linearandbinarysearch.linearsearch;
 
+import java.util.Scanner;
 public class FindSpecificWord {
 	public static String searchWord(String words[], String word) {
 		for(String sentence : words) {
@@ -8,8 +9,22 @@ public class FindSpecificWord {
 		return "Not Found";
 	}
 	public static void main(String[] args) {
-		String words[] = {"I am Avi", "I love music", "Akshay Love Coding", "Play cricket in free time"};
-		String word = "Love";
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter size of sentences: ");
+		int size = sc.nextInt();
+		sc.nextLine();
+
+		String words[] = new String[size];
+		System.out.println("\nEnter " + size + " sentences: ");
+		int idx = 0;
+		while(idx < size) {
+			words[idx] = sc.nextLine();
+			idx++;
+		}
+		
+		System.out.print("\nEnter a word to search: ");
+		String word = sc.nextLine();
 		
 		String result = searchWord(words, word);
 		if(result.equalsIgnoreCase("Not Found")) System.out.println(result);
