@@ -49,3 +49,13 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 4 – StringBuilder, StringBuffer, FileReader](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
+
+## 🗓 Day 5 –  Time & Space Complexity Optimization
+*(Date: 07-Jan-2026)*
+
+- Studied Time & Space Complexity Optimization and also Solved some problems based on it
+- Solved problem related to Linear Search & Binary Search
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 5 – Linear Search & Binary Search](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
