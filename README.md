@@ -365,3 +365,17 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 22 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 23 - Scenario Based Problems & LeetCode Problems(HashSet, HashMap)
+*(Date: 10-Jan-2026)
+
+- Solved 2 Scenario based problems
+	- Library Organizer, Tab History Manager
+- Solved LeetCode Problems related to HashSet and HashMap
+	- MajorityElement, DuplicateCheck, Is Subsequence
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:* 
+[Day 23 - Scenario Based Problems(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 23 - LeetCode Problems(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leet-code-codebase)
