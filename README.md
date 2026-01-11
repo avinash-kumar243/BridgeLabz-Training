@@ -251,4 +251,14 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 17 – leetcode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+ - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
+## 🗓 Day 18 -  LeetCode Problems(Strings)
+*(Date: 10-Jan-2026)
+
+- Solved LeetCode Problems related to HashSet and HashMap
+	- Is Subsequence, RotateString
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:* 
+[Day 18 - LeetCode Problems(Strings)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/strings)
