@@ -148,3 +148,23 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 4 - Scenario Based Problem](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 5 – Scenario based problem(oops)
+*(Date: 08-Jan-2026)*
+
+- Solved Scenario based problem
+  - MediStore – Pharmacy Inventory & Sales System
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 5 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 6 – Scenario based problem(oops)
+*(Date: 09-Jan-2026)*
+
+- Solved Scenario based problem
+  - Food Ordering System from the Restaurant
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 22 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com/foodorderingsystem)
