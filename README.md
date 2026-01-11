@@ -59,3 +59,16 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 5 – Linear Search & Binary Search](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
+
+## 🗓 Day 6 –  Time & Space Complexity Optimization Problems
+*(Date: 08-Jan-2026)*
+
+- Studied Time & Space Complexity Optimization
+- Solved questions related to Time & Space Complexity
+  - Compare Bubble, Merge, and Quick Sort Time Complexity
+  - Compare Linear and Binary Search Time Complexity
+  - Compare String, StringBuilder and StringBuffer Time Complexity
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:* 
+[Day 6 - Time & Space Complexity](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/timeandspacecomplexity)
