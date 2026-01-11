@@ -72,3 +72,17 @@ BridgeLabz-Training/
 
 🔗 *Code Link:* 
 [Day 6 - Time & Space Complexity](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/timeandspacecomplexity)
+
+## 🗓 Day 7 - Scenario Based Problems & LeetCode Problems(HashSet, HashMap)
+*(Date: 10-Jan-2026)
+
+- Solved 2 Scenario based problems
+	- Library Organizer, Tab History Manager
+- Solved LeetCode Problems related to HashSet and HashMap
+	- MajorityElement, DuplicateCheck
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:* 
+[Day 7 - Scenario Based Problems](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 7 - LeetCode Problems](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leet-code-codebase)
