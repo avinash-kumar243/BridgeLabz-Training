@@ -330,17 +330,38 @@ BridgeLabz-Training/
 
 [Day 19 - Linear and Binary Search](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com)
 
-## 🗓 Day 20 - LeetCode Practice, Scenario based Problems(oops), Time and Space Complexity
+## 🗓 Day 20 - Scenario based Problems(oops)
 *(Date: 07-Jan-2026)*
 
 - Solved problems on LeetCode related to Array 
   - Find Peak Element, Find minimum in Roteted Sorted array
 - Studied Time and Spca Complexity
-- Solved Scenario based Problems
-  - Smart Parking Management System
 - commited and pushed all changes Successfully.
 
 🔗 *Code Link:*
 [Day 20 - Scenario Based Problems(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 20 - LeetCode Practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/arrays)
+
+## 🗓 Day 21 – Scenario based problem(oops), Time & Space Complexity Optimization
+*(Date: 08-Jan-2026)*
+
+- Solved Scenario based problem
+  - MediStore – Pharmacy Inventory & Sales System
+- Studied Time & Space Complexity Optimization
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 21 – Time & Space Complexity](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/dsa/src/com/timeandspacecomplexity)
+
+[Day 21 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 22 – Scenario based problem(oops)
+*(Date: 09-Jan-2026)*
+
+- Solved Scenario based problem
+  - Artify – Digital Art Marketplace, FoodLoop – Restaurant Ordering System
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 22 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
