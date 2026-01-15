@@ -379,3 +379,27 @@ BridgeLabz-Training/
 [Day 23 - Scenario Based Problems(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 23 - LeetCode Problems(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leet-code-codebase)
+
+## 🗓 Day 24 – Scenario based problem(oops), Scenario based Problem(dsa)
+*(Date: 12-Jan-2026)*
+
+- Solved Scenario based problem(oops)
+  - HomeNest – Smart Home Device Manager
+- Solved Scenario based problem(dsa)
+  - Ambulance Route (Emergency Patient Navigation) – (Circular Linked List) 
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 24 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 24 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com/emergencypatientnavigation)
+
+## 🗓 Day 25 – Scenario based problem(dsa)
+*(Date: 13-Jan-2026)*
+
+- Solved Scenario based problem(oops)
+  - Traffic Manager - Manage vehicle in a smart city 
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 25 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
