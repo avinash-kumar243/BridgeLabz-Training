@@ -403,3 +403,32 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 25 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 26 - Scenario based problems(dsa), Learn basics of Java Generics
+*(Date: 15-Jan-2026)*
+
+- Solved 3 Scenario based problems(dsa)
+  - HospitalQueue – Patient Sorting by Criticality (Bubble Sort)
+  - SmartShelf – Real-Time Book Arrangement (Insertion Sort)
+  - ZipZipMart – Daily Sales Summary Report (Merge Sort)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*
+[Day 26 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 27 - Scenario based problems(dsa), Geeksforgeeks problem (Quick Sort)
+*(Date: 16-Jan-2026)*
+- Solved 1 GeeksforGeeks Problem
+	- Quick Sort
+- Solved 5 Scenario based problems(dsa)
+	- EventManager – Ticket Price Optimizer (Quick Sort)
+	- ExamCell – Student Rank Generator (Merge Sort)
+	- RoboWarehouse – Shelf Loading Robot (Insertion Sort)
+	- CinemaHouse – Movie Time Sorting (Bubble Sort)
+	- CropMonitor – Sensor Data Ordering (Quick Sort)
+- Commited and pushed all changes successfully.
+
+🔗 *Code Link:*
+[Day 27 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 27 - Geeksforgeeks Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/QuickSort.java) 
