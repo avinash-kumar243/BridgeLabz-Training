@@ -86,3 +86,52 @@ BridgeLabz-Training/
 [Day 7 - Scenario Based Problems](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 7 - LeetCode Problems](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leet-code-codebase)
+
+
+## Week 4: Scenario Based Problem - DSA
+
+## 🗓 Day 1 –  Scenario-Based Problem 
+*(Date: 12-Jan-2026)*
+
+- Solved Scenario based problem
+  - Ambulance Route (Emergency Patient Navigation) – (Circular Linked List)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 1 – Scenario based problem](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 2 –  Scenario-Based Problem 
+*(Date: 13-Jan-2026)*
+
+- Solved Scenario based problem
+  - Traffic Manager - Manage vehicle in a smart city using Circular Linkedlist and Queue
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 2 – Scenario based problem](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 3 –  Scenario-Based Problem 
+*(Date: 15-Jan-2026)*
+
+- Solved 3 Scenario based problem
+  - HospitalQueue – Patient Sorting by Criticality (Bubble Sort)
+  - SmartShelf – Real-Time Book Arrangement (Insertion Sort)
+  - ZipZipMart – Daily Sales Summary Report (Merge Sort)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 3 – Scenario based problem](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 4 –  Scenario-Based Problem 
+*(Date: 16-Jan-2026)*
+
+- Solved 5 Scenario based problem
+  - EventManager – Ticket Price Optimizer (Quick Sort)
+  - ExamCell – Student Rank Generator (Merge Sort)
+  - RoboWarehouse – Shelf Loading Robot (Insertion Sort)
+  - CinemaHouse – Movie Time Sorting (Bubble Sort)
+  - CropMonitor – Sensor Data Ordering (Quick Sort)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 4 – Scenario based problem](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
