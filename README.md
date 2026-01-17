@@ -262,3 +262,13 @@ BridgeLabz-Training/
 
 🔗 *Code Link:* 
 [Day 18 - LeetCode Problems(Strings)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/strings)
+
+## 🗓 Day 19 -  LeetCode Problems(Strings)
+*(Date: 16-Jan-2026)
+
+- Solved LeetCode Problems related to Strings
+	- First Unique Character in a String
+Commited and pushed changes successfully.
+
+🔗 *Code Link:*
+[Day 19 - LeetCode Problems(Strings)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/core-java-practice/leet-code-codebase/strings)
