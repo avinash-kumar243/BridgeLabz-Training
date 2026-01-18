@@ -1,4 +1,4 @@
-package com.flightschedulingsystem;
+package com.generics.flightschedulingsystem;
 
 public class FlightSystem {
 	public static void main(String[] args) {

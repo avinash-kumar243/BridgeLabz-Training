@@ -1,4 +1,4 @@
-package com.flightschedulingsystem;
+package com.generics.flightschedulingsystem;
 
 import java.util.ArrayList;
 import java.util.List;

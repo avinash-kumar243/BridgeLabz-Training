@@ -1,4 +1,4 @@
-package com.flightschedulingsystem;
+package com.generics.flightschedulingsystem;
 
 public class Booking<T> {
 	private T bookingId;
