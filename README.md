@@ -431,4 +431,22 @@ BridgeLabz-Training/
 🔗 *Code Link:*
 [Day 27 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
-[Day 27 - Geeksforgeeks Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/QuickSort.java) 
+[Day 27 - Geeksforgeeks Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/leet-code-codebase) 
+
+## 🗓 Day 28 - Scenario based problems(dsa), Scenario based problems(oops)
+*(Date: 17-Jan-2026)*
+
+- Solved 4 Scenario based problems(dsa)
+	- ArtExpo – Sort Artists by Registration Time (Insertion Sort)
+	- FleetManager – Vehicle Maintenance Scheduler (Merge Sort)
+	- IceCreamRush – Sorting Flavors by Popularity (Bubble Sort)
+	- SmartLibrary – Auto-Sort Borrowed Books (Insertion Sort)
+- Solved 2 Scenario based problems(oops)
+	- Comparision of lines 
+	- Bag-n-Ball Organizer
+- Commited and pushed all changes successfully.
+
+🔗 *Code Link:*
+[Day 28 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 28 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
