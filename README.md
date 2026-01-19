@@ -416,7 +416,7 @@ BridgeLabz-Training/
 🔗 *Code Link:*
 [Day 26 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
-## 🗓 Day 27 - Scenario based problems(dsa), Geeksforgeeks problem (Quick Sort)
+## 🗓 Day 27 - Scenario based problems(dsa), Geeksforgeeks problem (Quick Sort), Java Generics
 *(Date: 16-Jan-2026)*
 - Solved 1 GeeksforGeeks Problem
 	- Quick Sort
@@ -426,6 +426,8 @@ BridgeLabz-Training/
 	- RoboWarehouse – Shelf Loading Robot (Insertion Sort)
 	- CinemaHouse – Movie Time Sorting (Bubble Sort)
 	- CropMonitor – Sensor Data Ordering (Quick Sort)
+- Solved Generics Problems in Java-Collections.
+
 - Commited and pushed all changes successfully.
 
 🔗 *Code Link:*
