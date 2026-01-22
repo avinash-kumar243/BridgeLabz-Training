@@ -452,3 +452,54 @@ BridgeLabz-Training/
 [Day 28 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 28 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 29 – Scenario based problem(oops), Scenario Based Problem(dsa)
+*(Date: 19-Jan-2026)*
+
+- Solved Scenario based problem(oops)
+  - Bag and Ball organizer system in a school
+  - A system to compare two line lengths
+- Solved Scenario based problem(dsa)
+  - FitnessTracker – Daily Step Count Ranking (Bubble Sort)
+  - FlashDealz – Product Sorting by Discount (Quick Sort)
+  - EduResults – Rank Sheet Generator (Merge Sort)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 29 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 29 - Scenario Based Problem(oops)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 30 – Java Generics Problems, Scenario Based Problem(dsa)
+*(Date: 20-Jan-2026)*
+
+- Solved Scenario based problem(dsa)
+  - High Score Ranking System using (Quick Sort)
+  - Daily Step Count Ranking using (Bubble Sort)
+  - GamerZone – High Score Ranking System (Quick Sort)
+- Solved 4 Generics problems 
+  - Personalized Meal Plan Generator
+  - Multi-Level University Course Management System
+  - Dynamic Online Marketplace
+  - Smart Warehouse Management System
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 30 – Java Generics](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/generics)
+
+[Day 30 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+## 🗓 Day 31 – Java Collections, Scenario Based Problem(dsa)
+*(Date: 21-Jan-2026)*
+
+- Studied & Solved Collections
+- Solved Set and List Interface related problem
+- Solved Scenario based problem(dsa)
+  - Sorting Medicines by Expiry using (Merge Sort)
+  - FlashDealz – Product Sorting by Discount (Quick Sort)
+- Committed and pushed all changes successfully.
+
+🔗 *Code Link:*  
+[Day 31 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
+
+[Day 31 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces)
