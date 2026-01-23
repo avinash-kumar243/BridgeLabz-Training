@@ -30,3 +30,18 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 2 – Java Generics](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/generics)
+
+## 🗓 Day 3 – Java Collections (List)
+*(Date: 19-Jan-2026)*
+
+- Studied & Solved Collections (List)
+- Solved List Interface related problem
+  - Reverse a List
+  - Find Frequency of Elements
+  - Rotate Elements in a List
+  - Remove Duplicates While Preserving Order
+  - Find the Nth Element from the End
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*  
+[Day 3 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces/list)
