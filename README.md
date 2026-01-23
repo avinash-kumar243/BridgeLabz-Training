@@ -21,3 +21,12 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 1 – GitHub Setup & Java Generics](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/generics)
+
+## 🗓 Day 2 – Java Generics & Collections
+*(Date: 17-Jan-2026)*
+
+- Solved Generics Problem
+- Studied Collections
+
+🔗 *Code Link:*  
+[Day 2 – Java Generics](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/generics)
