@@ -45,3 +45,21 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 3 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces/list)
+
+## 🗓 Day 4 – Java Collections (Set, Queue, Map)
+*(Date: 19-Jan-2026)*
+
+- Studied & Solved Collections
+- Solved Set, Map, Queue Interface related problem
+  - Check if Two Sets Are Equal
+  - Union and Intersection of Two Sets
+  - Symmetric Difference
+  - Reverse a Queue
+  - Implement a Stack Using Queues
+  - Invert a Map
+  - Merge Two Maps
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*  
+[Day 3 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces)
+
