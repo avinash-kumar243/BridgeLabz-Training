@@ -23,7 +23,7 @@ public class CustomException {
 		}
 	}
 
-	private static void validateAge(int age) {
+	private static void validateAge(int age) throws InvalidAgeException {
 		if(age < 18 && age > 0) {
 			throw new InvalidAgeException("Age below 18 can't vote");
 		} else if(age <= 0) {
