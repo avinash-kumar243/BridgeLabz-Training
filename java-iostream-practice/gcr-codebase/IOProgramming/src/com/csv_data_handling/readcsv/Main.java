@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class Main {
 	public static void main(String[] args) {
-		String employeePath = "DataFiles/employee.csv";
-			
+		String employeePath = "DataFiles/com/csv_data_handling/readcsv/employee2.csv";
+		
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(employeePath))) {
 			
