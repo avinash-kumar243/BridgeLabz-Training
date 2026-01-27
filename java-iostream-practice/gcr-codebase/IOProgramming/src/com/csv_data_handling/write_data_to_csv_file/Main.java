@@ -21,7 +21,7 @@ public class Main {
 			System.out.println("Students data written successfully");
 			file.close();
 		} catch(IOException e) {
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage()); 
 		}
 	}
 }
