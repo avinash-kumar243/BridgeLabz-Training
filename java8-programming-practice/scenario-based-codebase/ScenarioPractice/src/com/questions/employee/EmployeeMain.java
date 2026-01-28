@@ -16,38 +16,69 @@ public class EmployeeMain {
 		employeeList.add(new Employee(106, "Vikki", 26, "Male", "CE", 2015, 60000));
 		
 		
+		
 		// Actual work :- 
 		
 		// Problem 1 :-  How many male and female employees are there in the organization?
 		System.out.println("1. Count of all male and female employees are: "); 
-		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
+		System.out.println(employeeList.employees.stream()
+				.collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
+		
 		
 		
 		// Problem 2 :- Print the name of all departments in the organization?
 		System.out.println("\n2. All departments name in the organization are: "); 
-		employeeList.employees.stream().map(Employee -> Employee.getDepartment()).distinct().toList().forEach(System.out::println);
+		employeeList.employees.stream()
+							  .map(Employee -> Employee.getDepartment())
+							  .distinct().toList()
+							  .forEach(System.out::println);
 		
 		
 
 		// Problem 3 :- What is the average age of male and female employees ?
 		System.out.println("\n3. Average age of male and female are: "); 
-		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge))));
+		System.out.println(employeeList.employees.stream()
+												  .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge))));
 		
 		
 		// Problem 4 :- Get the details of highest paid employee in the organization?
 		System.out.println("\n4. Highest paid employee details are: "); 
-		Optional<Employee> h = employeeList.employees.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
+		Optional<Employee> h = employeeList.employees.stream()
+													 .collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
 		System.out.println(h);
+		
 		
 		
 		// Problem 5 :- Get the names of all employees who have joined after 2015?
 		System.out.println("\n5. All employees who have joined after 2015 are: "); 
-		employeeList.employees.stream().filter(Employee -> Employee.getJoiningYear() >= 2015).forEach(System.out::println);
+		employeeList.employees.stream()
+							  .filter(Employee -> Employee.getJoiningYear() >= 2015)
+							  .forEach(System.out::println);
 		
 		
 		// Problem 6 :- Count the number of employees in each department?
 		System.out.println("\n6. Total count of employees in each department: "); 
-		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getDepartment, Collectors.counting())));
-
+		System.out.println(employeeList.employees.stream()
+												 .collect(Collectors.groupingBy(Employee :: getDepartment, Collectors.counting())));
+		
+		
+		
+		// Problem 7 :- What is the average salary of each department ?
+		System.out.println("\n7. Average salary of each department: ");
+		System.out.println(employeeList.employees.stream()
+												 .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingInt(Emp -> Emp.getSalary()))));
+		
+		
+		
+		// Problem 8 :- Get the details of youngest male employee in the 'IT' Department?
+		System.out.println("\n8. Details of youngest male employee in IT department are: "); 
+		Employee youngestEmp = employeeList.employees.stream()
+													 .filter(emp -> emp.getGender().equals("Male"))
+													 .max(Comparator.comparing(Employee::getJoiningYear))
+													 .get();
+		System.out.println(youngestEmp);
+		
+		
+		
 	}
 }
