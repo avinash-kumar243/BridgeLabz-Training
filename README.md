@@ -47,7 +47,7 @@ BridgeLabz-Training/
 [Day 3 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces/list)
 
 ## 🗓 Day 4 – Java Collections (Set, Queue, Map)
-*(Date: 19-Jan-2026)*
+*(Date: 20-Jan-2026)*
 
 - Studied & Solved Collections
 - Solved Set, Map, Queue Interface related problem
@@ -61,5 +61,14 @@ BridgeLabz-Training/
 - Committed and pushed solutions to the repository 
 
 🔗 *Code Link:*  
-[Day 3 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces)
+[Day 4 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces)
 
+## 🗓 Day 5 – Java Streams
+*(Date: 21-Jan-2026)*
+
+- Studied Java Streams
+- Solved Java Streams Problems
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:* 
+[Day 5 – Java Streams](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/javastream)
