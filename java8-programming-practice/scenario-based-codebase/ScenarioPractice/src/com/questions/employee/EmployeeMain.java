@@ -1,7 +1,5 @@
 package com.questions.employee;
 
-import java.util.stream.Collectors;
-
 public class EmployeeMain {
 	public static void main(String[] args) {
 		EmployeeDataList employeeList = new EmployeeDataList();
@@ -13,10 +11,15 @@ public class EmployeeMain {
 		employeeList.add(new Employee(105, "Shekhar", 27, "Male", "EC", 2023, 50000));
 		employeeList.add(new Employee(106, "Vikki", 26, "Male", "CE", 2025, 60000));
 		
-
+		
+		// Actual work :- 
 		
 		// Problem 1 :-  How many male and female employees are there in the organization?
-		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
-
+//		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
+		
+		
+		// Problem 2 :- Print the name of all departments in the organization?
+		employeeList.employees.stream().map(Employee -> Employee.getDepartment()).distinct().toList().forEach(System.out::println);
+		
 	}
 }
