@@ -523,3 +523,14 @@ BridgeLabz-Training/
 
 [Day 32 - Java Exceptions](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions)
 
+## 🗓 Day 33 – Java Regex and Junit
+*(Date: 23-Jan-2026)*
+
+- Studied Regex and Junit
+- Solved probelms ralated to Regex and Junit
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 33 – Java Regex](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/regex)
+
+[Day 33 - Java Junit](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/junit)
