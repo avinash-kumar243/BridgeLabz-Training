@@ -503,3 +503,23 @@ BridgeLabz-Training/
 [Day 31 - Scenario Based Problem(dsa)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based-codebase/ScenarioPractice/src/com)
 
 [Day 31 – Java Collections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/interfaces)
+
+## 🗓 Day 32 – Java Streams and Exceptions
+*(Date: 22-Jan-2026)*
+
+- Studied Java Streams and Exceptions
+- Solved probelms ralated to Java Streams and Exceptions
+  - Checked Exception
+  - Unchecked Exception
+  - Custom Exception
+  - try-with-resources
+  - throw vs throws
+  - Exception Propagation
+  - Multiple catch blocks
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:* 
+[Day 32 - Java Streams](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/javastream)
+
+[Day 32 - Java Exceptions](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions)
+
