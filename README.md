@@ -90,7 +90,7 @@ BridgeLabz-Training/
 🔗 *Code Link:*
 [Day 6 – Java Exceptions](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions)
 
-## 🗓 Day 7 – Java Exceptions
+## 🗓 Day 7 – Java Regex and Junit
 *(Date: 23-Jan-2026)*
 
 - Studied Regex and Junit
@@ -102,7 +102,7 @@ BridgeLabz-Training/
 
 [Day 7 - Java Junit](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/junit)
 
-## 🗓 Day 8 – Java Exceptions
+## 🗓 Day 8 – Annotations and Reflections
 *(Date: 24-Jan-2026)*
 
 - Studied Annotations and Reflections
