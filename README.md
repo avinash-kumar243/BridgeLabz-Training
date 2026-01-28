@@ -72,3 +72,20 @@ BridgeLabz-Training/
 
 🔗 *Code Link:* 
 [Day 5 – Java Streams](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/javastream)
+
+## 🗓 Day 6 – Java Exceptions
+*(Date: 22-Jan-2026)*
+
+- Studied Java Exceptions
+- Solved probelms ralated to Java Exceptions
+  - Checked Exception
+  - Unchecked Exception
+  - Custom Exception
+  - try-with-resources
+  - throw vs throws
+  - Exception Propagation
+  - Multiple catch blocks
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 6 – Java Exceptions](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/exceptions)
