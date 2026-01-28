@@ -1,5 +1,7 @@
 package com.questions.employee;
 
+import java.util.stream.Collectors;
+
 public class EmployeeMain {
 	public static void main(String[] args) {
 		EmployeeDataList employeeList = new EmployeeDataList();
@@ -15,11 +17,18 @@ public class EmployeeMain {
 		// Actual work :- 
 		
 		// Problem 1 :-  How many male and female employees are there in the organization?
-//		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
+		System.out.print("Count of all male and female employees are: "); 
+		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
 		
 		
 		// Problem 2 :- Print the name of all departments in the organization?
+		System.out.print("All departments name in the organization are: "); 
 		employeeList.employees.stream().map(Employee -> Employee.getDepartment()).distinct().toList().forEach(System.out::println);
 		
+		
+
+		// Problem 3 :- What is the average age of male and female employees ?
+		System.out.print("Average age of male and female are: "); 
+		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge))));
 	}
 }
