@@ -534,3 +534,15 @@ BridgeLabz-Training/
 [Day 33 – Java Regex](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/regex)
 
 [Day 33 - Java Junit](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/junit)
+
+## 🗓 Day 34 – Annotations and Reflections
+*(Date: 24-Jan-2026)*
+
+- Studied Annotations and Reflections
+- Solved probelms ralated to Annotations and Reflections
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 34 - Java Annotations](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/annotation)
+
+[Day 34 - Java Reflections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/reflection)
