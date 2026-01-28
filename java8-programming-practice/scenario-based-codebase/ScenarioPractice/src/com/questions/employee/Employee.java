@@ -44,9 +44,11 @@ public class Employee {
 	public int getSalary() {
 		return salary;
 	}
-	
+
+
 	@Override
 	public String toString() {
-		return id + " | " + name + " | " + age + " | " + gender + " | " + department + " | " + joiningYear + " | " + salary; 
+		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", gender=" + gender + ", department="
+				+ department + ", joiningYear=" + joiningYear + ", salary=" + salary + "]";
 	}
 }

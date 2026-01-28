@@ -19,25 +19,30 @@ public class EmployeeMain {
 		// Actual work :- 
 		
 		// Problem 1 :-  How many male and female employees are there in the organization?
-		System.out.print("Count of all male and female employees are: "); 
+		System.out.println("Count of all male and female employees are: "); 
 		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee :: getGender, Collectors.counting())));
 		
 		
 		// Problem 2 :- Print the name of all departments in the organization?
-		System.out.print("All departments name in the organization are: "); 
+		System.out.println("\nAll departments name in the organization are: "); 
 		employeeList.employees.stream().map(Employee -> Employee.getDepartment()).distinct().toList().forEach(System.out::println);
 		
 		
 
 		// Problem 3 :- What is the average age of male and female employees ?
-		System.out.print("Average age of male and female are: "); 
+		System.out.println("\nAverage age of male and female are: "); 
 		System.out.println(employeeList.employees.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge))));
 		
 		
 		// Problem 4 :- Get the details of highest paid employee in the organization?
+		System.out.println("\nHighest paid employee details are: "); 
 		Optional<Employee> h = employeeList.employees.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
 		System.out.println(h);
 		
+		
+		// Problem 5 :- Get the names of all employees who have joined after 2015?
+		System.out.println("\nAll employees who have joined after 2015 are: "); 
+		employeeList.employees.stream().filter(Employee -> Employee.getJoiningYear() >= 2015).forEach(System.out::println);
 		
 	}
 }
