@@ -10,8 +10,9 @@ public class Employee {
 	private String department;
 	private int joiningYear;
 	private int salary;
+	private String team;
 	
-	public Employee(int id, String name, int age, String gender, String department, int joiningYear, int salary) {
+	public Employee(int id, String name, int age, String gender, String department, String team, int joiningYear, int salary) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
@@ -19,6 +20,7 @@ public class Employee {
 		this.department = department;
 		this.joiningYear = joiningYear;
 		this.salary = salary;
+		this.team = team;
 	}
 	
 	
@@ -44,11 +46,14 @@ public class Employee {
 	public int getSalary() {
 		return salary;
 	}
+	public String getTeam() {
+		return team; 
+	}
 
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", gender=" + gender + ", department="
-				+ department + ", joiningYear=" + joiningYear + ", salary=" + salary + "]";
+				+ department + ", team=" + team + ", joiningYear=" + joiningYear + ", salary=" + salary + "]";
 	}
 }
