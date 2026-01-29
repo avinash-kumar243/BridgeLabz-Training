@@ -571,3 +571,16 @@ BridgeLabz-Training/
 🔗 *Code Link:*
 [Day 36 - JSON Data](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-iostream-practice/java-iostream-practice/gcr-codebase/IOProgramming/src/com)
 
+
+## 🗓️ Week 6 – Java 8 Features
+**Focus:** Lambda Expression and Function Interfaces
+
+## 🗓 Day 37 – Java Stream and Scenario Based Problems 
+*(Date: 28-Jan-2026)*
+
+- Create new branch `java8-programmming-practice`
+- Solved Sceanrio based question in Stream API
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 37 - Java Stream Scenario Based Problems](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions)
