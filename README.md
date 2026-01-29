@@ -560,3 +560,14 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*
 [Day 35 - CSV Handling](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-iostream-practice/java-iostream-practice/gcr-codebase/IOProgramming/src/com/csv_data_handling)
+
+## 🗓 Day 36 – JSON Data 
+*(Date: 27-Jan-2026)*
+
+- Studied JSON Data 
+- Solved Collections Problems based `JSON`
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 36 - JSON Data](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-iostream-practice/java-iostream-practice/gcr-codebase/IOProgramming/src/com)
+
