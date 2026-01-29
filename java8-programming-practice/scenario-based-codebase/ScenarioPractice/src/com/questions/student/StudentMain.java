@@ -3,20 +3,21 @@ package com.questions.student;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StudentMain {
 	public static void main(String[] args) {
 		List<Student> students = new ArrayList<>();
 		
 		students.add(new Student("Avinash kumar", 101, "Avinash", "CE", 23, "Male", "Bhopal", 100, "111111")); 
-		students.add(new Student("Krishna kumar", 102, "Krishna", "CSE", 25, "Male", "Noida", 140, "222222")); 
+		students.add(new Student("Krishna kumar", 102, "Krishna", "CSE", 25, "Male", "Noida", 40, "222222")); 
 		students.add(new Student("Deepika Roy", 103, "Deepika", "AIDS", 22, "Female", "Indore", 42, "333333")); 
-		students.add(new Student("Priyanshu kumar", 104, "Priyanshu", "IT", 23, "Male", "Mumbai", 410, "444444")); 
+		students.add(new Student("Priyanshu kumar", 104, "Priyanshu", "IT", 23, "Male", "Mumbai", 160, "444444")); 
 		students.add(new Student("Deepak kumar", 105, "Deepak", "ME", 21, "Male", "Delhi", 25, "555555")); 
 		students.add(new Student("Komal kumari", 106, "Komal", "ME", 26, "Female", "Mumbai", 12, "666666")); 
 		students.add(new Student("Anjali Singh", 107, "Anjali", "CSE", 23, "Female", "Mumbai", 90, "777777")); 
 		students.add(new Student("Devika kumari", 108, "Devika", "EC", 24, "Female", "Bhopal", 78, "888888")); 
-		students.add(new Student("Rohan kumar", 109, "Rohan", "AIDS", 27, "Male", "Pune", 120, "999999")); 
+		students.add(new Student("Rohan kumar", 109, "Rohan", "AIDS", 27, "Male", "Pune", 112, "999999")); 
 		
 
 		
@@ -91,6 +92,37 @@ public class StudentMain {
 		students.stream()
 				.sorted(Comparator.comparing(Student::getName).thenComparing(Student::getRank))
 				.forEach(System.out::println);
+		
+		
+		// Problem 11 :- Count the number of students in each department.
+		System.out.println("\n11. Total count of students in each department.");
+		System.out.println(students.stream()
+								   .collect(Collectors.groupingBy(Student :: getDepartment, Collectors.counting())));
+				
+		
+		// Problem 12 :- Count the number of students in each city.
+		System.out.println("\n12. Count the number of students in each city.");
+		System.out.println(students.stream()
+								   .collect(Collectors.groupingBy(Student :: getCity, Collectors.counting())));
+		
+		
+		// Problem 13 :- Find the average age of students in each department.
+		System.out.println("\n13. The average age of students in each department.");
+		System.out.println(students.stream()
+								   .collect(Collectors.groupingBy(Student::getDepartment, Collectors.averagingInt(Student::getAge))));
+		
+		
+		// Problem 14 :- Find the average rank of students by gender.
+		System.out.println("\n14. The average rank of students by gender."); 
+		System.out.println(students.stream()
+				                   .collect(Collectors.groupingBy(Student::getGender, Collectors.averagingInt(Student::getRank))));
+		
+		
+		// Problem 15 :- Find the total number of students in the organization.
+		System.out.println("\n15. The total number of students in the organization.");
+		System.out.println(students.stream()
+								   .collect(Collectors.counting()));
+		
 		
 		
 		
