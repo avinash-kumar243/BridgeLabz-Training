@@ -28,7 +28,7 @@ public class Student {
 	// Getters for Student details
 	public String getName() {
 		return name;
-	}
+	} 
 	public int getId() {
 		return id;
 	}
