@@ -546,3 +546,17 @@ BridgeLabz-Training/
 [Day 34 - Java Annotations](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/annotation)
 
 [Day 34 - Java Reflections](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollections/src/com/reflection)
+
+
+## 🗓️ Week 5 – Java IO Programming
+**Focus:** CSV File Handling and JSON
+
+## 🗓 Day 35 – CSV Handling
+*(Date: 26-Jan-2026)*
+
+- Created new branch `java-iostreams-practice` 
+- Solved Problem on `CSV Hanldings`
+- Committed and pushed solutions to the repository 
+
+🔗 *Code Link:*
+[Day 35 - CSV Handling](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-iostream-practice/java-iostream-practice/gcr-codebase/IOProgramming/src/com/csv_data_handling)
