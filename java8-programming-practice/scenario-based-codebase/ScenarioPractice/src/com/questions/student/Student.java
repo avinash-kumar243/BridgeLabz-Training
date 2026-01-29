@@ -1,5 +1,7 @@
 package com.questions.student;
 
+import java.util.List;
+
 public class Student {
 	private String name;
 	private int id;
@@ -9,9 +11,9 @@ public class Student {
 	private String gender;
 	private String city;
 	private int rank;
-	private String contacts;
+	private List<String> contacts;
 	
-	public Student(String name, int id, String firstName, String department, int age, String gender, String city, int rank,String contacts) {
+	public Student(String name, int id, String firstName, String department, int age, String gender, String city, int rank, List<String> contacts) {
 		this.name = name;
 		this.id = id;
 		this.firstName = firstName;
@@ -48,7 +50,7 @@ public class Student {
 	public int getRank() {
 		return rank;
 	}
-	public String getContacts() {
+	public List<String> getContacts() {
 		return contacts;
 	}
 
