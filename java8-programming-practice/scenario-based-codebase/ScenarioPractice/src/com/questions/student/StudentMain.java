@@ -255,7 +255,6 @@ public class StudentMain {
 			    .filter(student -> student.getGender().equalsIgnoreCase("Female"))
 			    .min(Comparator.comparing(Student::getRank)) 
 			    .ifPresentOrElse(System.out::println, () -> System.out.println("No Female student found"));
-
-		 
+		
 	}
 }
