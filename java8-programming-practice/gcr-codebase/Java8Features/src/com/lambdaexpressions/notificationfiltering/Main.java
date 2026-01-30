@@ -23,6 +23,6 @@ public class Main {
 		// Java Stream pipeline
 		alerts.stream()
 			  .filter(user)
-			  .forEach(System.out::println); 
+			  .forEach(System.out::println);
 	}
 }
