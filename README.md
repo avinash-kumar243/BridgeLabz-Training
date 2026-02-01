@@ -60,3 +60,15 @@ BridgeLabz-Training/
 
 [Day 3 - Scenario based problems(Student)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions/student)
 
+
+## 🗓 Day 4 – Collectors
+*(Date: 31-Jan-2026)*
+
+- Studied & Solved Collectors
+  - Student Result Grouping
+  - Word Frequency Counter
+  - Order Revenue Summary
+- Committed and pushed solutions to the repository
+
+🔗 *Code Link:*  
+[Day 4 – Collectors](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/collectors)
