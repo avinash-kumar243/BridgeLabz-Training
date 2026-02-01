@@ -42,3 +42,21 @@ BridgeLabz-Training/
 
 [Day 2 - Scenario based problems(Functional Interface)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions)
 
+
+## 🗓 Day 3 – Stream API, Scenario based problems
+*(Date: 30-Jan-2026)*
+
+- Studied & Solved Stream API
+- Solved Scenario based problems related to Stream API
+  - Top 5 Trending Movies
+  - Hospital Doctor Availability
+  - Insurance Claim Analysis
+- Committed and pushed solutions to the repository
+
+🔗 *Code Link:*  
+[Day 3 – Stream API](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/streamapi) 
+
+[Day 3 - Scenario based problems(Employee)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions/employee)
+
+[Day 3 - Scenario based problems(Student)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions/student)
+
