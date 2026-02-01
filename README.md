@@ -25,3 +25,20 @@ BridgeLabz-Training/
 [Day 1 – GitHub Setup & Lambda Expressions](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/lambdaexpressions)
 
 [Day 1 - Scenario based problems(Lambda Expressions)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions/lambdaexpression)
+
+
+## 🗓 Day 2 – Functional Interface, Scenario based problems
+*(Date: 29-Jan-2026)*
+
+- Studied Functional Interfaces
+- Solved Functional Interface gcr and Scenario based problems
+  - Temperature Alert System
+  - String Length Checker
+  - Background Job Execution
+- Committed and pushed solutions to the repository
+
+🔗 *Code Link:*  
+[Day 2 – Functional Interfaces](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/interfaces) 
+
+[Day 2 - Scenario based problems(Functional Interface)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/scenario-based-codebase/ScenarioPractice/src/com/questions)
+
