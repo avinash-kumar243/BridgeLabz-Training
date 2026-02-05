@@ -113,32 +113,5 @@ public class Main {
 		
 		sortedlist.forEach(list -> System.out.println(list));
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
