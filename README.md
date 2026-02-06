@@ -633,3 +633,28 @@ BridgeLabz-Training/
 
 🔗 *Code Link:*  
 [Day 40 – Collectors](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java8-programming-practice/java8-programming-practice/gcr-codebase/Java8Features/src/com/collectors)
+
+---
+
+## 🗓️ Week 07 - Solution Designing and Multithreading
+**Focus:** Design Principles, Design Patterns, and Multithreading
+
+---
+
+### Day 38 – Design Pattern and Design Principles
+**Date:** 01-Feb-2026 
+
+- Created new branch `java-design-pattern-practice`
+- Explored all the designs principles (SOLID, DRY, KISS, YAGNI)
+- Understood the design patterns
+- Singleton Pattern
+- Factory Pattern
+- Observer Pattern
+- Builder Pattern
+- UML Design
+- Committed and pushed solutions to the repository
+
+🔗 Code Link:  
+- [java-design-pattern-practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesign/src/com/javadesignpattern/problems/librarymanagementsystem)
+
+---
