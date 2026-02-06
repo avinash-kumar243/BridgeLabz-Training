@@ -658,3 +658,20 @@ BridgeLabz-Training/
 - [java-design-pattern-practice](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesign/src/com/javadesignpattern/problems/librarymanagementsystem)
 
 ---
+
+### Day 39 – Java Multithreading
+**Date:** 02-Feb-2026
+
+- Explored Multithreading in java
+- Thread Life Cycle
+- Thread Methods and Operations
+- Creating Threads Using Thread Class
+- Creating Threads Using Runnable Interface
+- Thread Class vs Runnable Interface
+- Solved practice and assignment problems based on multithreading
+- Committed and pushed solutions to the repository
+
+🔗 Code Link:  
+- [java-design-pattern-practice(multithreading)](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/java-design-pattern-practice/java-design-pattern-practice/gcr-codebase/JavaDesign/src/com/multithreading/problems)
+
+---
