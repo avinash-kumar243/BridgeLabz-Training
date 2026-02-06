@@ -623,7 +623,7 @@ BridgeLabz-Training/
 
 
 ## 🗓 Day 40 – Collectors
-*(Date: 31-Jan-2026)*
+*(Date: 02-Feb-2026)*
 
 - Studied & Solved Collectors
   - Student Result Grouping
@@ -642,7 +642,7 @@ BridgeLabz-Training/
 ---
 
 ### Day 41 – Design Pattern and Design Principles
-**Date:** 01-Feb-2026 
+**Date:** 03-Feb-2026 
 
 - Created new branch `java-design-pattern-practice`
 - Explored all the designs principles (SOLID, DRY, KISS, YAGNI)
@@ -660,7 +660,7 @@ BridgeLabz-Training/
 ---
 
 ### Day 42 – Java Multithreading
-**Date:** 02-Feb-2026
+**Date:** 04-Feb-2026
 
 - Explored Multithreading in java
 - Thread Life Cycle
