@@ -641,7 +641,7 @@ BridgeLabz-Training/
 
 ---
 
-### Day 38 – Design Pattern and Design Principles
+### Day 41 – Design Pattern and Design Principles
 **Date:** 01-Feb-2026 
 
 - Created new branch `java-design-pattern-practice`
@@ -659,7 +659,7 @@ BridgeLabz-Training/
 
 ---
 
-### Day 39 – Java Multithreading
+### Day 42 – Java Multithreading
 **Date:** 02-Feb-2026
 
 - Explored Multithreading in java
