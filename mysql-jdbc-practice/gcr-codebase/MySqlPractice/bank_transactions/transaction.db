@@ -1,0 +1,106 @@
+/*
+Exercise 2: Transaction Management
+Implement a banking system with:
+• Transfer money between accounts (use transactions)
+• Check balance
+• Transaction history
+*/
+
+
+
+
+------------------------------ Bank Transaction System ----------------------------
+------------------------------ Database used :- MySql -----------------------------
+
+
+---------- Database creation ------------
+CREATE DATABASE bankdb;
+USE bankdb;
+
+
+
+----------- TABLE Creation --------------
+CREATE TABLE accounts (
+account_id INT AUTO_INCREMENT PRIMARY KEY,
+account_holder_name VARCHAR(30),
+balance DECIMAL(10, 2)
+);
+
+CREATE TABLE transactions (
+transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+from_account INT,
+to_account INT,
+amount DECIMAL(10, 2),
+transaction_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+	
+
+------------- Add Accounts ---------------
+INSERT INTO accounts 
+(account_holder_name, balance)
+VALUES
+('Deepak', 5000),
+('Sachin', 2000),
+('Komal', 3000),
+('Aarti', 1000);
+
+
+--- Output ---
++------------+---------------------+---------+
+| account_id | account_holder_name | balance |
++------------+---------------------+---------+
+|          1 | Deepak              | 5000.00 |
+|          2 | Sachin              | 2000.00 |
+|          3 | Komal               | 3000.00 |
+|          4 | Aarti               | 1000.00 |
++------------+---------------------+---------+
+
+
+
+------------------ Money Transfer Using TRANSACTIONS -------------------
+START TRANSACTION;
+
+------------------ Deduct Money From Sender Account -------------------
+UPDATE accounts
+SET balance = balance - 1000
+WHERE account_holder_name = 'Deepak';
+
+------------------ Add Money To Receiver Account ----------------------
+UPDATE accounts
+SET balance = balance + 1000
+WHERE account_holder_name = 'Aarti';
+
+----------------- Insert Transaction Record ---------------------------
+INSERT INTO transactions
+(from_account, to_account, amount)
+VALUES
+(1, 4, 1000);
+
+----------------- Commit Transaction for forever ----------------------
+COMMIT;
+
+
+----------------- Show all Transactions -------------------------------
+SELECT * FROM transactions;
+
+--- Output ---
++----------------+--------------+------------+---------+---------------------+
+| transaction_id | from_account | to_account | amount  | transaction_date    |
++----------------+--------------+------------+---------+---------------------+
+|              1 |            1 |          4 | 1000.00 | 2026-02-08 12:13:36 |
++----------------+--------------+------------+---------+---------------------+
+
+
+--- Current Accounts ---
+SELECT * FROM accounts;
+
+--- Output ---
++------------+---------------------+---------+
+| account_id | account_holder_name | balance |
++------------+---------------------+---------+
+|          1 | Deepak              | 4000.00 |
+|          2 | Sachin              | 3000.00 |
+|          3 | Komal               | 2000.00 |
+|          4 | Aarti               | 2000.00 |
++------------+---------------------+---------+
