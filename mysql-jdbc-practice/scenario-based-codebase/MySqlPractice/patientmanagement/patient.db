@@ -1,0 +1,193 @@
+--------------- Creating Database -----------------
+CREATE DATABASE IF NOT EXISTS hospital;
+USE hospital;
+
+
+
+/*
+1. Patient Management
+
+UC-1.1: Register New Patient
+Actor: Receptionist
+Flow: Enter patient details (name, DOB, contact, address, blood group). System 
+validates uniqueness by phone/email, generates patient ID, inserts record into 
+patients table with auto-increment primary key.
+*/
+
+--------------- Patient table creation ------------
+CREATE TABLE patients (
+patient_id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30) NOT NULL,
+dob DATE NOT NULL,
+phone VARCHAR(10) NOT NULL  UNIQUE,
+email VARCHAR(40) UNIQUE,
+address VARCHAR(250),
+blood_group VARCHAR(5),
+created_date DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+--------------- Add Patient ------------------------
+INSERT INTO patients
+(name, dob, phone, email, address, blood_group)
+VALUES
+('Rahul Sharma', '1998-05-12', '9876543210', 'rahul@gmail.com', 'Delhi', 'O+'),
+('Amit Verma', '1995-02-10', '9123456789', 'amit@gmail.com', 'Mumbai', 'A+'),
+('Neha Singh', '2000-08-25', '9988776655', 'neha@gmail.com', 'Pune', 'B+'),
+('Pooja Patel', '1997-11-03', '9090909090', 'pooja@gmail.com', 'Ahmedabad', 'AB+'),
+('Rohit Kumar', '1994-01-18', '8899776655', 'rohit@gmail.com', 'Bangalore', 'O-'),
+('Anjali Gupta', '1999-06-30', '9012345678', 'anjali@gmail.com', 'Jaipur', 'A-');
+
+---- Output ----
++------------+---------------+------------+------------+-------------------+-------------+-------------+---------------------+
+| patient_id | name          | dob        | phone      | email             | address     | blood_group | created_at          |
++------------+---------------+------------+------------+-------------------+-------------+-------------+---------------------+
+| 1          | Rahul Sharma  | 1998-05-12 | 9876543210 | rahul@gmail.com   | Delhi       | O+          | 2026-02-08 10:30:12 |
+| 2          | Amit Verma    | 1995-02-10 | 9123456789 | amit@gmail.com    | Mumbai      | A+          | ...                 |
+| 3          | Neha Singh    | 2000-08-25 | 9988776655 | neha@gmail.com    | Pune        | B+          | ...                 |
+| 4          | Pooja Patel   | 1997-11-03 | 9090909090 | pooja@gmail.com   | Ahmedabad   | AB+         | ...                 |
+| 5          | Rohit Kumar   | 1994-01-18 | 8899776655 | rohit@gmail.com   | Bangalore   | O-          | ...                 |
+| 6          | Anjali Gupta  | 1999-06-30 | 9012345678 | anjali@gmail.com  | Jaipur      | A-          | ...                 |
++------------+---------------+------------+------------+-------------------+-------------+-------------+---------------------+
+
+
+
+
+/*
+UC-1.2: Update Patient Information
+Actor: Receptionist
+Flow: Search patient by ID/phone, display current details, update fields, execute 
+SQL UPDATE with WHERE clause on patient ID.
+*/
+
+
+------------- Update Patient -------------
+UPDATE patients
+SET phone = '1234567890',
+	address = 'Delhi'
+WHERE patient_id = 5;
+
+
+SELECT * FROM patients
+WHERE patient_id = 5;
+
++------------+-------------+------------+------------+-----------------+---------+-------------+---------------------+
+| patient_id | name        | dob        | phone      | email           | address | blood_group | created_date        |
++------------+-------------+------------+------------+-----------------+---------+-------------+---------------------+
+|          5 | Rohit Kumar | 1994-01-18 | 1234567890 | rohit@gmail.com | Delhi   | O-          | 2026-02-09 07:55:46 |
++------------+-------------+------------+------------+-----------------+---------+-------------+---------------------+
+
+
+
+
+/*
+UC-1.3: Search Patient Records
+Actor: Receptionist/Doctor
+Flow: Query patients table using LIKE operator for name search or exact match for 
+ID/phone. Display results using ResultSet iteration.
+*/
+
+
+----------------- Searching patient records ------------------
+SELECT * FROM patients
+WHERE name LIKE '%Pooja%';
+
++------------+-------------+------------+------------+-----------------+-----------+-------------+---------------------+
+| patient_id | name        | dob        | phone      | email           | address   | blood_group | created_date        |
++------------+-------------+------------+------------+-----------------+-----------+-------------+---------------------+
+|          4 | Pooja Patel | 1997-11-03 | 9090909090 | pooja@gmail.com | Ahmedabad | AB+         | 2026-02-09 07:55:46 |
++------------+-------------+------------+------------+-----------------+-----------+-------------+---------------------+
+
+
+
+
+/* 
+UC-1.4: View Patient Visit History
+Actor: Doctor/Receptionist
+Flow: Execute JOIN query between appointments and visits tables filtered by patient ID. Display chronological list with doctor names and diagnoses.
+*/
+
+
+--------------- Doctor table creation -------------
+CREATE TABLE doctors (
+doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+doctor_name VARCHAR(40) NOT NULL,
+phone VARCHAR(10) UNIQUE,
+consulation_fee INT NOT NULL
+);
+
+--- Add Doctor details ---
+INSERT INTO doctors 
+(doctor_name, phone, consulation_fee)
+VALUES
+('Dr. Amit Sharma', '9876543210', 500),
+('Dr. Neha Verma', '9123456780', 700),
+('Dr. Rahul Mehta', '9988776655', 600),
+('Dr. Pooja Singh', '9012345678', 800),
+('Dr. Ankit Patel', '8899001122', 550);
+
+
+--------------- Appointment table creation -----------
+CREATE TABLE appointments (
+appointment_id INT PRIMARY KEY AUTO_INCREMENT,
+patient_id INT,
+doctor_id INT,
+appointment_date DATE,
+
+FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);
+
+---- Insert appointment ----
+INSERT INTO appointments
+(patient_id, doctor_id, appointment_date)
+VALUES
+(1, 1, '2026-02-10'),
+(2, 2, '2026-02-10'),
+(3, 3, '2026-02-11'),
+(4, 1, '2026-02-11'),
+(5, 4, '2026-02-12');
+
+
+----------------- Visit table creation ----------------
+CREATE TABLE visits (
+    visit_id INT AUTO_INCREMENT PRIMARY KEY,
+    appointment_id INT NOT NULL,
+    diagnosis VARCHAR(255),
+    prescription VARCHAR(255),
+
+    FOREIGN KEY (appointment_id) REFERENCES appointments(appointment_id)
+);
+
+---- Insert vigits ----
+INSERT INTO visits
+(appointment_id, diagnosis, prescription)
+VALUES
+(1, 'Fever and cold', 'Paracetamol 500mg'),
+(2, 'Headache', 'Ibuprofen 400mg'),
+(3, 'Stomach pain', 'Omeprazole'),
+(4, 'High blood pressure', 'Amlodipine'),
+(5, 'Seasonal allergy', 'Cetirizine');
+
+
+--------------- Join on visits and appointment tables --------------
+SELECT 
+    a.appointment_date,
+    d.doctor_name,
+    v.diagnosis,
+    v.prescription
+FROM appointments a
+JOIN visits v
+    ON a.appointment_id = v.appointment_id
+JOIN doctors d
+    ON a.doctor_id = d.doctor_id
+WHERE a.patient_id = 1
+ORDER BY a.appointment_date;
+
+-- Output --
++------------------+------------------+----------------------+------------------+
+| appointment_date | doctor_name      | diagnosis            | prescription     |
++------------------+------------------+----------------------+------------------+
+| 2026-02-11       | Dr. Amit Sharma  | High blood pressure  | Amlodipine       |
++------------------+------------------+----------------------+------------------+
+
+
