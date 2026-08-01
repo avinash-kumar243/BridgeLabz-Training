@@ -14,19 +14,19 @@ Each day includes:
 **Date:** 31-July-2026
 
 📖 Topics Covered
-- ** Database & DBMS
-- ** Types of Databases
-- ** RDBMS vs NoSQL
-- ** Database Schema
-- ** Keys & Constraints
-- ** DDL & DML Commands
-- ** SQL Clauses
-- ** MySQL Basics
+- **Database & DBMS**
+- **Types of Databases**
+- **RDBMS vs NoSQL**
+- **Database Schema**
+- **Keys & Constraints**
+- **DDL & DML Commands**
+- **SQL Clauses**
+- **MySQL Basics**
 
 💻 Practical Work
 - Installed and configured MySQL.
 - Created HealthClinicDB.
-- Practiced database and table creation.
+- Practiced database and table creation. 
 - Performed DDL and DML operations.
 - Explored MySQL data types and constraints.
 
