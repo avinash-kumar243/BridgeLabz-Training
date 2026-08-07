@@ -105,3 +105,26 @@ Each day includes:
 
 🔗 Code Link:
 - 📌 [Day-4](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-4)
+
+---
+
+### Day 5 – Tomcat, Servlets & Spring Core Fundamentals
+**Date:** 06-August-2026
+
+📖 Topics Covered
+- **Explored Apache Tomcat Server**
+- **Servlet Architecture & Lifecycle**
+- **Basics of Spring Framework**
+- **Spring Core**
+- **Explored IoC and DI**
+- **Spring Beans**
+
+💻 Practical Work
+- Explored the architecture and working of **Apache Tomcat**.
+- Learned the **Servlet lifecycle** and request handling process.
+- Implemented **(DI)** using Spring Beans.
+- Created three Spring Core projects using **XML**, **Java**, and **Annotation-based** configuration.
+- Implemented **Dependency Injection (DI)** through all three configuration approaches.
+
+🔗 Code Link:
+- 📌 [Day-5](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-5)
