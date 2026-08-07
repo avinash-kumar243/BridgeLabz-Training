@@ -15,4 +15,4 @@ public class App {
         Student constructorStudent = context.getBean("studentConstructor", Student.class);
         constructorStudent.display();
     } 
-} 
+}  
