@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Greetings</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+    <a href="/" class="logo">👋 My Greetings</a>
+
+    <nav class="nav">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+
+</header>
+
+
+<!-- Main -->
+
+<main class="page-container">
+
+    <div class="home-content">
+
+        <h1>
+            Welcome to My Greetings App
+        </h1>
+
+        <p>
+            Create an account and send simple greetings.
+        </p>
+
+        <div class="home-buttons">
+
+            <a href="/login" class="btn btn-primary">
+                Login
+            </a>
+
+            <a href="/register" class="btn btn-secondary">
+                Register
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

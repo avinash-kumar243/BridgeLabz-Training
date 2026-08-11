@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Greetings History</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+    <a href="/greet" class="logo">👋 My Greetings</a>
+
+    <nav class="nav">
+        <a href="/greet">Home</a>
+        <a href="/logout">Logout</a>
+    </nav>
+
+</header>
+
+
+<!-- History -->
+
+<main class="page-container">
+
+    <div class="history-container">
+
+        <h1>Greetings History</h1>
+
+
+        <!-- If greetings exist -->
+
+        <div th:if="${!#lists.isEmpty(greetings)}">
+
+            <div
+                th:each="greeting : ${greetings}"
+                class="greeting-item">
+
+                <div
+                    class="greeting-message"
+                    th:text="${greeting.message}">
+
+                    Greeting message
+
+                </div>
+
+                <div
+                    class="greeting-date"
+                    th:text="${#temporals.format(greeting.createdAt, 'dd MMM yyyy, hh:mm a')}">
+
+                    10 Aug 2026, 12:30 PM
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- If no greetings -->
+
+        <div
+            th:if="${#lists.isEmpty(greetings)}"
+            class="empty-history">
+
+            No greetings found.
+
+        </div>
+
+
+        <!-- Actions -->
+
+        <div class="history-actions">
+
+
+            <!-- Delete all -->
+
+            <a href="#deleteGreetings"
+               class="btn btn-danger">
+
+                Delete All Greetings
+
+            </a>
+
+
+            <!-- Close -->
+
+            <a href="/greet"
+               class="btn btn-secondary">
+
+                Close History
+
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     Delete Confirmation Modal
+     ========================= -->
+
+<div id="deleteGreetings"
+     class="modal-overlay">
+
+    <div class="modal">
+
+        <h2>Delete All Greetings?</h2>
+
+        <p>All greetings will be permanently deleted</p>
+
+
+        <form
+            th:action="@{/history/delete}"
+            method="post">
+
+            <div class="modal-actions">
+
+                <button
+                    type="submit"
+                    class="btn btn-danger">
+
+                    Delete
+
+                </button>
+ 
+                <a href="#"
+                   class="btn btn-secondary">
+
+                    Cancel
+
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

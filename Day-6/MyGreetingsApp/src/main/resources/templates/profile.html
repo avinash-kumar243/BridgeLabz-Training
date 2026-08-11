@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <h1>My Profile</h1>
+
+    <p>
+        Current Name:
+        <span th:text="${user.name}"></span>
+    </p>
+
+    <p>
+        Email:
+        <span th:text="${user.email}"></span>
+    </p>
+
+
+    <hr>
+
+
+    <h2>Update Name</h2>
+
+    <form th:action="@{/update-name}" method="post">
+
+        <label>New Name:</label>
+
+        <input type="text" name="name" required>
+
+        <button type="submit">Update Name</button>
+
+    </form>
+
+
+    <hr>
+
+
+    <h2>Update Password</h2>
+
+    <form th:action="@{/update-password}"
+          th:object="${passwordUpdateRequest}"
+          method="post">
+
+        <label>Old Password:</label>
+
+        <input type="password" th:field="*{oldPassword}">
+
+        <p th:if="${#fields.hasErrors('oldPassword')}"
+           th:errors="*{oldPassword}">
+        </p>
+
+
+        <br>
+
+        <label>New Password:</label>
+
+        <input type="password" th:field="*{newPassword}">
+
+        <p th:if="${#fields.hasErrors('newPassword')}"
+           th:errors="*{newPassword}">
+        </p>
+
+
+        <br>
+
+        <p th:if="${passwordError}"
+           th:text="${passwordError}">
+        </p>
+
+
+        <button type="submit">Update Password</button>
+
+    </form>
+
+
+    <br>
+
+    <a th:href="@{/greet}">Back to Greeting</a>
+
+</body>
+
+</html>

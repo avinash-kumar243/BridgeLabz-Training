@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Greetings</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+    <a href="/greet" class="logo">👋 My Greetings</a>
+
+    <nav class="nav">
+        <a href="/greet">Home</a>
+        <a href="/logout">Logout</a>
+    </nav>
+
+</header>
+
+
+<!-- Main -->
+
+<main class="page-container">
+
+    <div class="greeting-card">
+
+        <h1>
+            Welcome,
+            <span th:text="${user.name}">
+                User
+            </span>
+            👋
+        </h1>
+
+        <p class="welcome-text">
+            Send a simple greeting
+        </p>
+
+
+        <!-- Create greeting -->
+
+        <form
+            th:action="@{/greet}"
+            th:object="${greetingRequest}"
+            method="post">
+
+            <div class="form-group">
+
+                <label for="message">
+                    Your Greeting
+                </label>
+
+                <input
+                    type="text"
+                    id="message"
+                    th:field="*{message}"
+                    class="form-control"
+                    placeholder="Enter your greeting">
+
+                <span
+                    th:if="${#fields.hasErrors('message')}"
+                    th:errors="*{message}"
+                    class="field-error">
+                </span>
+
+            </div>
+
+            <button
+                type="submit" class="btn btn-primary full-width">
+
+                Send Greeting
+
+            </button>
+
+        </form>
+
+
+        <!-- Other actions -->
+
+        <div class="greeting-actions">
+
+            <!-- Update Name -->
+
+            <a href="#updateName" class="btn btn-secondary">
+
+                Update Name
+
+            </a>
+
+
+            <!-- History -->
+
+            <a href="/history" class="btn btn-secondary">
+                All Greetings History
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     Update Name Modal
+     ========================= -->
+
+<div id="updateName"
+     class="modal-overlay">
+
+    <div class="modal">
+
+        <h2>Update Name</h2>
+
+        <p>Enter your new name</p>
+
+
+        <form
+            th:action="@{/update-name}"
+            th:object="${updateNameRequest}"
+            method="post">
+
+            <div class="form-group">
+
+                <label for="newName">New Name</label>
+
+                <input
+                    type="text"
+                    id="newName"
+                    th:field="*{name}"
+                    class="form-control"
+                    placeholder="Enter your new name">
+
+                <span
+                    th:if="${#fields.hasErrors('name')}"
+                    th:errors="*{name}"
+                    class="field-error">
+                </span>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Update
+
+                </button>
+
+                <a href="#"
+                   class="btn btn-secondary">
+
+                    Cancel
+
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

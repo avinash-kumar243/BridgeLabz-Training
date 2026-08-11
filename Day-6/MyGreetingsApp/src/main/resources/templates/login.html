@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - My Greetings</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+    <a href="/" class="logo"> 👋 My Greetings </a>
+
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+    </nav>
+
+</header>
+
+
+<!-- Login -->
+
+<main class="page-container">
+
+    <div class="card">
+
+        <h1> Welcome Back 👋 </h1>
+
+        <p class="card-subtitle">Login to continue to your account</p>
+
+
+        <!-- Login error -->
+
+        <div th:if="${loginError}"
+             class="error-message">
+
+            <span th:text="${loginError}">
+                Invalid email or password
+            </span>
+
+        </div>
+
+
+        <form th:action="@{/login}"
+              th:object="${loginRequest}"
+              method="post">
+
+
+            <!-- Email -->
+
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    th:field="*{email}"
+                    class="form-control"
+                    placeholder="Enter your email">
+
+                <span
+                    th:if="${#fields.hasErrors('email')}"
+                    th:errors="*{email}"
+                    class="field-error">
+                </span>
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="form-group">
+
+                <label for="password"> Password </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    th:field="*{password}"
+                    class="form-control"
+                    placeholder="Enter your password">
+
+                <span
+                    th:if="${#fields.hasErrors('password')}"
+                    th:errors="*{password}"
+                    class="field-error">
+                </span>
+
+            </div>
+
+
+            <!-- Login button -->
+
+            <button
+                type="submit"
+                class="btn btn-primary full-width">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <div class="bottom-text">
+
+            Don't have an account?
+
+            <a href="/register"> Create Account </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

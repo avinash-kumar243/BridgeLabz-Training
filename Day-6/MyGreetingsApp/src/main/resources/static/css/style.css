@@ -1,0 +1,422 @@
+/* ==============================
+   Common
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fc;
+    color: #17233c;
+}
+
+/* ==============================
+   Header
+   ============================== */
+
+.header {
+    height: 106px;
+    background: #1d293d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border-bottom: 1px solid #31405a;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+/* ==============================
+   Main container
+   ============================== */
+
+.page-container {
+    min-height: calc(100vh - 106px);
+    padding: 50px 20px;
+}
+
+/* ==============================
+   Card
+   ============================== */
+
+.card {
+    width: 420px;
+    max-width: 95%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(30, 45, 70, 0.12);
+}
+
+.card h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #172b4d;
+}
+
+.card-subtitle {
+    text-align: center;
+    color: #63728a;
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+
+/* ==============================
+   Home page
+   ============================== */
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-content h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 21px;
+    color: #60708a;
+    margin-bottom: 35px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* ==============================
+   Forms
+   ============================== */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccd5e2;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #5146e5;
+}
+
+/* ==============================
+   Buttons
+   ============================== */
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #5146e5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #4439d0;
+}
+
+.btn-secondary {
+    background: #e9edf5;
+    color: #253552;
+}
+
+.btn-secondary:hover {
+    background: #dce2ed;
+}
+
+.btn-danger {
+    background: #d9534f;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c9433f;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* ==============================
+   Form bottom text
+   ============================== */
+
+.bottom-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #63728a;
+}
+
+.bottom-text a {
+    color: #5146e5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ==============================
+   Error / message
+   ============================== */
+
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.field-error {
+    display: block;
+    color: #d9534f;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* ==============================
+   Logged-in greeting page
+   ============================== */
+
+.greeting-card {
+    width: 550px;
+    max-width: 95%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(30, 45, 70, 0.12);
+}
+
+.greeting-card h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.greeting-card .welcome-text {
+    text-align: center;
+    color: #63728a;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.greeting-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* ==============================
+   History
+   ============================== */
+
+.history-container {
+    width: 750px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.history-container h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.greeting-item {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 5px 15px rgba(30, 45, 70, 0.08);
+}
+
+.greeting-message {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.greeting-date {
+    font-size: 13px;
+    color: #78869a;
+}
+
+.history-actions {
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ==============================
+   Modal
+   ============================== */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 30, 45, 0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay:target {
+    display: flex;
+}
+
+.modal {
+    width: 400px;
+    max-width: 90%;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.modal p {
+    text-align: center;
+    color: #63728a;
+    margin-bottom: 20px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* ==============================
+   Empty history
+   ============================== */
+
+.empty-history {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    color: #718096;
+    font-size: 17px;
+}
+
+/* ==============================
+   Responsive
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .page-container {
+        padding: 35px 15px;
+    }
+
+    .card {
+        width: 400px;
+        padding: 25px 20px;
+    }
+
+    .card h1 {
+        font-size: 27px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .greeting-card {
+        padding: 25px 20px;
+    }
+
+    .greeting-card h1 {
+        font-size: 27px;
+    }
+
+    .history-container {
+        width: 100%;
+    }
+
+    .modal {
+        padding: 25px 20px;
+    }
+}
