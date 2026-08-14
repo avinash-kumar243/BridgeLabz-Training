@@ -46,14 +46,7 @@
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
 		
-		<!-- Spring doc OpenAPI-->
-		<dependency>
-		    <groupId>org.springdoc</groupId>
-		    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-		    <version>3.0.3</version>
-		</dependency>
-		
-		<!-- Swagger dependency -->
+		<!-- Spring doc OpenAPI - Swagger dependency -->
 		<dependency>
 		    <groupId>org.springdoc</groupId>
 		    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
