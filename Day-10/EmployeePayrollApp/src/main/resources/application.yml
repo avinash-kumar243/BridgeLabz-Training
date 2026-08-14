@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: EmployeePayrollApp
+
+  datasource:
+    url: jdbc:h2:mem:employeepayroll
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
