@@ -5,7 +5,6 @@ import com.employeepayroll.dto.EmployeeResponseDto;
 import com.employeepayroll.dto.EmployeeSearchDto;
 import com.employeepayroll.service.IEmployeeService;
 
-import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 
 import org.springframework.data.domain.Page;
@@ -29,18 +28,16 @@ public class EmployeeController {
 
     
     // Create Employee
-    @Operation(summary = "Create a new Employee", description = "Create a new Employee and store it to the database")
     @PostMapping("/employees")
     public ResponseEntity<EmployeeResponseDto> createEmployee(@Valid @RequestBody EmployeeRequestDto requestDto) {
 
         EmployeeResponseDto response = employeeService.createEmployee(requestDto);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response); 
     }
     
 
     // Get all Employees
-    @Operation(summary = "Get All Employees", description = "Fetch all the employees data from the database")
     @GetMapping("/employees")
     public ResponseEntity<List<EmployeeResponseDto>> getAllEmployees() {
         return ResponseEntity.ok(employeeService.getAllEmployees());
@@ -48,7 +45,6 @@ public class EmployeeController {
 
     
     // Get Employee by Id
-    @Operation(summary = "Get Employee by Id", description = "Fetch an Employee data using Employee id")
     @GetMapping("/employees/{id}")
     public ResponseEntity<EmployeeResponseDto> getEmployeeById(@PathVariable Long id) {
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
@@ -63,6 +59,7 @@ public class EmployeeController {
     
     
     // Patch Employee
+    
     @PatchMapping("/employees/{id}")
     public ResponseEntity<EmployeeResponseDto> patchEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeRequestDto requestDto) {
         return ResponseEntity.ok(employeeService.patchEmployee(id, requestDto));
@@ -70,7 +67,6 @@ public class EmployeeController {
     
 
     // Delete Employee
-    @Operation(summary = "Delete employee", description = "Deletes an employee using the employee ID")
     @DeleteMapping("/employees/{id}")
     public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
 
@@ -91,8 +87,8 @@ public class EmployeeController {
     @GetMapping("/employees/sort")
     public ResponseEntity<List<EmployeeResponseDto>> getEmployeesSorted(@RequestParam(defaultValue = "id") String sortBy, @RequestParam(defaultValue = "asc") String direction) {
         return ResponseEntity.ok(employeeService.getEmployeesSorted(sortBy, direction));
-    }
-    
+    }  
+     
     
     // Search Employee
     @GetMapping("/employees/search")
