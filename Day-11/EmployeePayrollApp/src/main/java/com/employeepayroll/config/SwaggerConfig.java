@@ -12,7 +12,7 @@ import io.swagger.v3.oas.models.info.Info;
 public class SwaggerConfig { 
  
     @Bean
-    public OpenAPI contactAppOpenAPI() {  // Creating OpenAPI bean (OpenAPI - A class provided by Swagger)
+    public OpenAPI EmployeePayrollOpenAPI() {  // Creating OpenAPI bean (OpenAPI - A class provided by Swagger)
 
     		// Setting manual fields - Because Swagger needs general information about our API
         return new OpenAPI().info(new Info()

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import com.employeepayroll.model.Department;
 
-@Repository
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 	
 //	Query by Example code

@@ -15,6 +15,7 @@ public class GlobalExceptionHandler {
 	// Employee Not Found
 	@ExceptionHandler(EmployeeNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleEmployeeNotFound(EmployeeNotFoundException e, HttpServletRequest request) {
+		
 		ErrorResponse errorResponse = new ErrorResponse(
                 LocalDateTime.now(),
                 HttpStatus.NOT_FOUND.value(),
@@ -23,15 +24,15 @@ public class GlobalExceptionHandler {
                 request.getRequestURI()
         );
 		
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse); 
+		return ResponseEntity
+				.status(HttpStatus.NOT_FOUND)
+				.body(errorResponse); 
 	}
 	
 	
 	// Department Not Found
     @ExceptionHandler(DepartmentNotFoundException.class)
-    public ResponseEntity<ErrorResponse> handleDepartmentNotFound(
-            DepartmentNotFoundException ex,
-            HttpServletRequest request) {
+    public ResponseEntity<ErrorResponse> handleDepartmentNotFound(DepartmentNotFoundException ex, HttpServletRequest request) {
 
         ErrorResponse errorResponse = new ErrorResponse(
                 LocalDateTime.now(),

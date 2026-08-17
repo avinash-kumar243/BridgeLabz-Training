@@ -14,8 +14,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "departments")
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Department {
 	
 	@Id
@@ -26,5 +24,5 @@ public class Department {
     private String name;
 	
 	@Size(min = 10, max = 100, message = "Department description must be between 10 and 100 characters")
-    private String description;
+    private String description; 
 }
