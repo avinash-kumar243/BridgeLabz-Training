@@ -1,0 +1,105 @@
+package com.employeepayroll.controller;
+
+import com.employeepayroll.dto.EmployeeRequestDto;
+import com.employeepayroll.dto.EmployeeResponseDto;
+import com.employeepayroll.dto.EmployeeSearchDto;
+import com.employeepayroll.service.IEmployeeService;
+
+import jakarta.validation.Valid;
+
+import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/v1")
+public class EmployeeController {
+
+    private final IEmployeeService employeeService;
+
+    // Constructor Injection
+    public EmployeeController(IEmployeeService employeeService) {
+        this.employeeService = employeeService;
+    }
+
+    
+    // Create Employee
+    @PostMapping("/employees")
+    public ResponseEntity<EmployeeResponseDto> createEmployee(@Valid @RequestBody EmployeeRequestDto requestDto) {
+
+        EmployeeResponseDto response = employeeService.createEmployee(requestDto);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+    
+
+    // Get all Employees
+    @GetMapping("/employees")
+    public ResponseEntity<List<EmployeeResponseDto>> getAllEmployees() {
+        return ResponseEntity.ok(employeeService.getAllEmployees());
+    }
+
+    
+    // Get Employee by Id
+    @GetMapping("/employees/{id}")
+    public ResponseEntity<EmployeeResponseDto> getEmployeeById(@PathVariable Long id) {
+        return ResponseEntity.ok(employeeService.getEmployeeById(id));
+    }
+
+    
+    // Update Employee
+    @PutMapping("/employees/{id}")
+    public ResponseEntity<EmployeeResponseDto> updateEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeRequestDto requestDto) {
+        return ResponseEntity.ok(employeeService.updateEmployee(id, requestDto));
+    }
+    
+    
+    // Patch Employee
+    @PatchMapping("/employees/{id}")
+    public ResponseEntity<EmployeeResponseDto> patchEmployee(@PathVariable Long id, @Valid @RequestBody EmployeeRequestDto requestDto) {
+        return ResponseEntity.ok(employeeService.patchEmployee(id, requestDto));
+    }
+    
+
+    // Delete Employee
+    @DeleteMapping("/employees/{id}")
+    public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
+
+        employeeService.deleteEmployee(id);
+
+        return ResponseEntity.noContent().build();
+    }
+    
+    
+    // Get Employee with Pagination
+    @GetMapping("/employees/page")
+    public ResponseEntity<Page<EmployeeResponseDto>> getEmployeesWithPagination(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "5") int size) {
+        return ResponseEntity.ok(employeeService.getEmployeesWithPagination(page, size)); 
+    }
+    
+    
+    // Get Employee sorted in ascending order
+    @GetMapping("/employees/sort")
+    public ResponseEntity<List<EmployeeResponseDto>> getEmployeesSorted(@RequestParam(defaultValue = "id") String sortBy, @RequestParam(defaultValue = "asc") String direction) {
+        return ResponseEntity.ok(employeeService.getEmployeesSorted(sortBy, direction));
+    }
+    
+    
+    // Search Employee
+    @GetMapping("/employees/search")
+    public ResponseEntity<List<EmployeeResponseDto>> searchEmployees(@ModelAttribute EmployeeSearchDto searchDto) {
+        return ResponseEntity.ok(employeeService.searchEmployees(searchDto));
+    }
+    
+    
+    // Find employees whose salary is greater than a given amount
+    @GetMapping("/employees/salary")
+    public ResponseEntity<List<EmployeeResponseDto>> getEmployeesWithSalaryGreaterThan(@RequestParam BigDecimal minSalary) {
+        return ResponseEntity.ok(employeeService.getEmployeesWithSalaryGreaterThan(minSalary));
+    }
+
+}
