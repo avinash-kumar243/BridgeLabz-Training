@@ -224,3 +224,24 @@ Each day includes:
 🔗 Code Link:
 
 - 📌 [Day-9](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-9)
+
+---
+
+### Day 10 – H2 Database & Employee Payroll App
+**Date:** 13-August-2026
+
+📖 Topics Covered
+- **Dependency Injection (DI)**
+- **H2 In-Memory Database**
+- **Spring JDBC**
+- **Employee Payroll App Backend**
+- **CRUD Operations**
+
+💻 Practical Work
+- Created the **Employee Payroll App** using Spring Boot and **Spring JDBC**.
+- Configured and integrated the **H2 database** with the backend application.
+- Implemented CRUD operations for the **Employee and Department** table.
+- Performed all the **CRUD** operations on employee and department tables.
+
+🔗 Code Link:
+- 📌 [Day-10](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-10)
