@@ -149,7 +149,7 @@ Each day includes:
 - Built **My Greetings App** using Spring MVC.
 
 🔗 Code Link:
-- 📌 [Day-6](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-6
+- 📌 [Day-6](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-6)
 
 ---
 
@@ -227,7 +227,7 @@ Each day includes:
 
 ---
 
-### Day 10 – H2 Database & Employee Payroll App
+### Day 10 – Spring JDBC, H2 Database & Employee Payroll App
 **Date:** 13-August-2026
 
 📖 Topics Covered
@@ -245,3 +245,28 @@ Each day includes:
 
 🔗 Code Link:
 - 📌 [Day-10](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-10)
+
+---
+
+### Day 11 – Spring JPA & Employee Payroll App
+**Date:** 14-August-2026
+
+📖 Topics Covered
+- **Spring JPA**
+- **CRUD Operations**
+- **Pagination**
+- **Sorting**
+- **Query by Example (QBE)**
+- **Employee Payroll App Backend**
+
+💻 Practical Work
+- Refactored the **Employee Payroll App** from **Spring JDBC to Spring JPA**.
+- Implemented CRUD operations for **Employee** and **Department** using Spring JPA.
+- Worked with **Spring Services** for implementing application business logic.
+- Implemented **Pagination** for retrieving records page by page.
+- Implemented **Sorting** for retrieving records in ascending and descending order.
+- Implemented **Query by Example (QBE)** for dynamic search and filtering.
+- Integrated and tested these features in the Employee Payroll App backend.
+
+🔗 Code Link:
+- 📌 [Day-11](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-11)
