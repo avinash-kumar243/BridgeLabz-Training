@@ -262,7 +262,6 @@ Each day includes:
 💻 Practical Work
 - Refactored the **Employee Payroll App** from **Spring JDBC to Spring JPA**.
 - Implemented CRUD operations for **Employee** and **Department** using Spring JPA.
-- Worked with **Spring Services** for implementing application business logic.
 - Implemented **Pagination** for retrieving records page by page.
 - Implemented **Sorting** for retrieving records in ascending and descending order.
 - Implemented **Query by Example (QBE)** for dynamic search and filtering.
@@ -270,3 +269,26 @@ Each day includes:
 
 🔗 Code Link:
 - 📌 [Day-11](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-11)
+
+---
+
+### Day 12 – Swagger, Logging & API Testing
+**Date:** 17-August-2026
+
+📖 Topics Covered
+- **Swagger / OpenAPI Documentation**
+- **Spring Boot Logging**
+- **Spring Scopes**
+- **Postman API Testing**
+
+💻 Practical Work
+- Added **Swagger / OpenAPI documentation** to the Employee Payroll App backend.
+- Added **logging** to the application for tracking application activities and execution flow.
+- Explored **Spring Bean Scopes**.
+- Tested Employee Payroll App REST API endpoints using **Postman**.
+- Completed the backend development and testing of the **Employee Payroll App**.
+
+🔗 Code Link:
+- 📌 [Day-12](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-12)
+
+---
