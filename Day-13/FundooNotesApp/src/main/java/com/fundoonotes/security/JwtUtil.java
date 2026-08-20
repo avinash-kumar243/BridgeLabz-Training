@@ -47,6 +47,18 @@ public class JwtUtil {
                 .getSubject(); 
 	}	
 	
+	// Extract expiration time
+    public long extractExpiration(String token) {
+
+        return Jwts.parser()
+                .verifyWith(getSigningKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .getExpiration()
+                .getTime();
+    }
+	
 	// Check if Token is valid or expired 
 	public boolean isTokenValid(String token) {
 

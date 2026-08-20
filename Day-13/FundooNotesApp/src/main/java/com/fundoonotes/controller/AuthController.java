@@ -1,8 +1,10 @@
 package com.fundoonotes.controller;
 
 import com.fundoonotes.dto.AuthResponseDto;
+import com.fundoonotes.dto.ForgotPasswordRequestDto;
 import com.fundoonotes.dto.LoginRequestDto;
 import com.fundoonotes.dto.RegisterRequestDto;
+import com.fundoonotes.dto.ResetPasswordRequestDto;
 import com.fundoonotes.service.impl.UserServiceImpl;
 
 import jakarta.validation.Valid;
@@ -39,4 +41,38 @@ public class AuthController {
     		
         return ResponseEntity.ok(new AuthResponseDto(token, "Login Successful")); 
     } 
+    
+    
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(@RequestHeader("Authorization") String authorizationHeader) {
+
+        if(authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
+            return ResponseEntity.badRequest().body("Invalid Authorization header");
+        }
+
+        // Extract token from authorization header
+        String token = authorizationHeader.substring(7);
+
+        userService.logout(token);
+
+        return ResponseEntity.ok("Logout Successful"); 
+    }
+    
+    
+    @PostMapping("/forgot-password")
+    public ResponseEntity<String> forgotPassword(@Valid @RequestBody ForgotPasswordRequestDto request) {
+
+        String resetToken = userService.forgotPassword(request);
+
+        return ResponseEntity.ok("Reset token: " + resetToken);
+    }
+    
+     
+    @PostMapping("/reset-password")
+    public ResponseEntity<String> resetPassword(@Valid @RequestBody ResetPasswordRequestDto request) {
+
+        userService.resetPassword(request);
+
+        return ResponseEntity.ok("Password reset successful"); 
+    }
 }
