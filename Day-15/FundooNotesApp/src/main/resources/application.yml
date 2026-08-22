@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: FundooNotesApp
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/fundoo_notes_app
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # It tells Hibernate to create/update database tables based on our entities
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+# JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION:3600000}
