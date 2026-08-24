@@ -292,3 +292,95 @@ Each day includes:
 - 📌 [Day-12](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-12)
 
 ---
+
+### Day 13 – Spring Security, JWT Authentication & Fundoo Notes App
+**Date:** 18-August-2026
+
+📖 Topics Covered
+- **Spring Security Fundamentals**
+- **Authentication vs Authorization**
+- **Security Filter Chain**
+- **UserDetails & UserDetailsService**
+- **Password Encoding using BCrypt**
+- **JWT Token Generation & Validation**
+- **Stateless Authentication**
+
+💻 Practical Work
+- Created the **Fundoo Notes App** using Spring Boot.
+- Recapped Spring Boot concepts and integrated **Spring Security** into the application.
+- Implemented basic **authentication and authorization** for application users.
+- Implemented **user registration** and **user login** functionality.
+- Used **BCryptPasswordEncoder** for secure password hashing.
+- Implemented **JWT-based authentication** for stateless user authentication.
+- Generated and validated JWT tokens during user authentication.
+
+🔗 Code Link:
+- 📌 [Day-13](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-13)
+
+---
+
+### Day 14 – Authorization, JPA Relationships & Notes Management
+**Date:** 19-August-2026
+
+📖 Topics Covered
+- **Token Validation & Security Context**
+- **Spring Data JPA**
+- **JPA Entity Relationships**
+- **One-to-Many & Many-to-One Relationships**
+- **Fundoo Notes Authentication & Authorization**
+
+💻 Practical Work
+- Implemented **authentication and authorization** for the Fundoo Notes App.
+- Secured REST endpoints using **JWT token-based verification**.
+- Deep-dived into **Spring Data JPA entity relationships**.
+- Established the relationship between **Users and Notes** using JPA mappings.
+
+🔗 Code Link:
+- 📌 [Day-14](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-14)
+
+---
+
+### Day 15 – Notes Organization, Search & Tags
+**Date:** 20-August-2026
+
+📖 Topics Covered
+- **Pin, Archive & Trash Concepts**
+- **Search & Filter Query Design**
+- **Tags / Labels Management**
+- **Fundoo Notes Organization Modules**
+
+💻 Practical Work
+- Implemented the **Pin / Archive / Trash Module** for organizing notes.
+- Implemented **state-based filtering** for notes.
+- Developed the **Search & Filter Module** for finding notes based on different criteria.
+- Implemented the **Tags / Labels Management Module**.
+- Integrated the organization, search, filter, and tag features into the **Fundoo Notes App**.
+
+🔗 Code Link:
+- 📌 [Day-15](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-15)
+
+---
+
+### Day 16 – JMS Messaging & Redis Token Caching
+**Date:** 21-August-2026
+
+📖 Topics Covered
+- **JMS (Java Message Service)**
+- **Synchronous vs Asynchronous Processing**
+- **JMS Producer & Consumer**
+- **Message Queue Concepts**
+- **Redis Caching**
+- **Fundoo Notes Reminder & Notification Module**
+
+💻 Practical Work
+- Explored **JMS** for asynchronous and non-blocking background processing.
+- Implemented messaging-based processing for the **Fundoo Notes App**.
+- Developed the **Reminder & Notification Module** using JMS.
+- Worked with message producers and consumers for background processing.
+- Explored **Redis** as an in-memory caching solution.
+- Implemented **JWT token caching using Redis**.- Used Redis caching to reduce repeated token-related processing and improve authorization performance.
+
+🔗 Code Link:
+- 📌 [Day-16](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-16)
+
+---
