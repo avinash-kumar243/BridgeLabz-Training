@@ -384,3 +384,28 @@ Each day includes:
 - 📌 [Day-16](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-16)
 
 ---
+
+### Day 17 – RabbitMQ & Spring Batch
+**Date:** 24-August-2026
+
+📖 Topics Covered
+- **RabbitMQ**
+- **Message Queuing Fundamentals**
+- **Producer & Consumer Architecture**
+- **Exchange, Queue & Binding Concepts**- **Message-Based Communication**
+- **Asynchronous Background Processing**
+- **RabbitMQ with Spring Boot**
+- **Spring Batch**
+- **Excel Export**
+
+💻 Practical Work
+- Explored **RabbitMQ** for asynchronous and background processing.
+- Learned the fundamentals of **message queues** and producer-consumer communication.
+- Explored **Exchanges, Queues, and Bindings** in RabbitMQ.
+- Explored **Spring Batch** and its role in processing large amounts of data in batches.
+- Explored the use of **Excel export** with Spring Batch.
+
+🔗 Code Link:
+- 📌 [Day-17](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-17)
+
+---
