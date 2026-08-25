@@ -1,0 +1,44 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: FundooNotesApp
+
+  # MySQL Database
+  datasource:
+    url: jdbc:mysql://localhost:3306/fundoo_notes_app
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # It tells Hibernate to create/update database tables based on our entities
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  #JMS
+  artemis:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+
+  # Redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  # RabbitMQ
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+# JWT
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION:3600000}
