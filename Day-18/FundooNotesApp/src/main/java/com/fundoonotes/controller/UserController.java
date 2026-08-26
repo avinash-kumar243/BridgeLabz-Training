@@ -79,9 +79,9 @@ public class UserController {
         
         reminderProducer.sendPasswordResetRequest(request.getEmail(), resetToken);  
 
-        return ResponseEntity.ok().build(); 
+        return ResponseEntity.ok("Reset Token: " + resetToken); 
     }
-    
+     
      
     // Reset Password 
     @Operation(summary = "Reset user password", description = "Resets the user's password using the provided password reset details")

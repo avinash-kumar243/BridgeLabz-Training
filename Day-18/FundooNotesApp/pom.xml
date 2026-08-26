@@ -113,6 +113,12 @@
 		    <artifactId>spring-boot-starter-artemis</artifactId>
 		</dependency>
 		
+		<!-- Email / SMTP -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		
 		<!-- Redis -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>

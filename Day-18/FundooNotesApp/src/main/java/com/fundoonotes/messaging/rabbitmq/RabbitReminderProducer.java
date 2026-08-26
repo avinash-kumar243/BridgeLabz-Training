@@ -8,6 +8,7 @@ import com.fundoonotes.config.RabbitMQConfig;
 @Component 
 public class RabbitReminderProducer {
 
+	// Used to send and receive messages between your Spring Boot application and RabbitMQ
     private final RabbitTemplate rabbitTemplate;
 
     // Constructor Injection 
