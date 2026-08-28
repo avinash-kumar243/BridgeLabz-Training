@@ -12,16 +12,36 @@ import io.jsonwebtoken.security.Keys;
 
 @Component
 public class JwtUtil {
-
+ 
     @Value("${jwt.secret}")
     private String secret;
 
     private SecretKey getSigningKey() {
         return Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
-    }
+    } 
 
     
-    // Validate JWT
+    public String extractUserId(String token) {
+
+        return Jwts.parser()
+                .verifyWith(getSigningKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .getSubject();
+    }
+
+    public long extractExpiration(String token) {
+
+        return Jwts.parser()
+                .verifyWith(getSigningKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload()
+                .getExpiration()
+                .getTime();
+    }
+
     public boolean isTokenValid(String token) {
 
         try {
@@ -32,20 +52,8 @@ public class JwtUtil {
 
             return true;
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             return false;
         }
-    }
-
-    
-    // Extract user ID from JWT
-    public String extractUserId(String token) {
-
-        return Jwts.parser()
-                .verifyWith(getSigningKey())
-                .build()
-                .parseSignedClaims(token)
-                .getPayload()
-                .getSubject();
     }
 }

@@ -21,7 +21,7 @@ public class SecurityConfig {
 
     public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
-    }
+    } 
 
     
     @Bean 
@@ -39,13 +39,13 @@ public class SecurityConfig {
                             "/auth/forgot-password",
                             "/auth/reset-password"
                     ).permitAll()
-                    .requestMatchers("/actuator/health").permitAll()
+                    .requestMatchers("/actuator/**").permitAll()
                     .anyRequest().authenticated()
             )
-
-            // Add our JWT filter before UsernamePasswordAuthenticationFilter
-            .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
  
+            // Add our JWT filter before UsernamePasswordAuthenticationFilter
+        	    .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        
         return http.build();
     }
 }

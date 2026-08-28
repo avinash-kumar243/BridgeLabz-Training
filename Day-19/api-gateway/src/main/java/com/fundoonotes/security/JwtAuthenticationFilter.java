@@ -1,11 +1,14 @@
 package com.fundoonotes.security;
 
 import java.io.IOException;
+import java.util.Collections;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.fundoonotes.service.JwtValidationCacheService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -15,58 +18,61 @@ import jakarta.servlet.http.HttpServletResponse;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
+    private final JwtValidationCacheService jwtValidationCacheService;
     private final JwtUtil jwtUtil;
 
-    public JwtAuthenticationFilter(JwtUtil jwtUtil) {
+    public JwtAuthenticationFilter(JwtValidationCacheService jwtValidationCacheService, JwtUtil jwtUtil) {
+        this.jwtValidationCacheService = jwtValidationCacheService;
         this.jwtUtil = jwtUtil;
-    } 
+    }
+
     
- 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
         String authorizationHeader = request.getHeader("Authorization");
 
-        // If Authorization header does not exist, continue the request
+        // No JWT → continue
+        // Spring Security will decide whether this endpoint is public or protected
         if(authorizationHeader == null || !authorizationHeader.startsWith("Bearer ")) {
-
             filterChain.doFilter(request, response);
+            return;
+        }
+
+        String token = authorizationHeader.substring(7);
+
+        
+        // Check Redis / validate JWT
+
+        String userId = jwtValidationCacheService.getUserIdIfValid(token);
+
+        if(userId == null) {
+
+            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+
+            response.getWriter().write("Invalid or expired token");
 
             return;
         }
 
         
-        // Extract JWT
-        String token = authorizationHeader.substring(7);
+        // Create Authentication
+        UsernamePasswordAuthenticationToken authentication =
+                new UsernamePasswordAuthenticationToken(
+                        userId,
+                        null,
+                        Collections.emptyList()
+                );
 
-        try {
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        
+        // Logout
+        if("POST".equalsIgnoreCase(request.getMethod()) && "/auth/logout".equals(request.getRequestURI())) {
 
-            // Validate JWT
-            if(jwtUtil.isTokenValid(token)) {
-
-                // Extract user ID from JWT
-                String userId = jwtUtil.extractUserId(token);
-
-                // Create Authentication object
-                UsernamePasswordAuthenticationToken authentication =
-                        new UsernamePasswordAuthenticationToken(
-                                userId,
-                                null,
-                                null
-                        ); 
-
-                // Store authentication in SecurityContext
-                SecurityContextHolder.getContext().setAuthentication(authentication);
-            } 
-
-        } catch (Exception e) {
-
-            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-
-            return;
+            long expirationTime = jwtUtil.extractExpiration(token);
         }
 
-        // Continue request 
+        // Continue request
         filterChain.doFilter(request, response);
     }
 }
