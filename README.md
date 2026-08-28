@@ -409,3 +409,29 @@ Each day includes:
 - 📌 [Day-17](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-17)
 
 ---
+
+### Day 18 – REST API Design, Exception Handling and AOP 
+**Date:** 25-August-2026
+
+📖 Topics Covered
+- **REST API Design Patterns**
+- **RESTful Request & Response Handling**
+- **Global Exception Handling**
+- **@ControllerAdvice & @ExceptionHandler**
+- **Centralized Error Responses**
+- **Logging Best Practices**
+- **Cross-Cutting Concerns**
+- **AOP Advice & Pointcuts**
+
+💻 Practical Work
+- Applied **REST API design patterns** across the Fundoo Notes App backend.
+- Implemented **Global Exception Handling** for centralized API error management.
+- Added custom exception handling and standardized error responses.
+- Improved **application logging** to make debugging and request processing easier.
+- Explored **Aspect-Oriented Programming (AOP)** for handling cross-cutting concerns.
+- Consolidated and hardened the **Fundoo Notes App backend** by improving error handling, logging, and cross-cutting concerns.
+
+🔗 Code Link:
+- 📌 [Day-18](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-18)
+
+---
