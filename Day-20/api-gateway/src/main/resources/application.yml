@@ -1,0 +1,51 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  cloud:
+    gateway:
+      routes:
+
+        # AUTH SERVICE
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates: 
+            - Path=/auth/**
+
+      discovery:
+        locator:
+          enabled: false
+
+# Now the api-Gateway can register itself with Eureka and discover other services
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ 
+
+  instance:
+    hostname: localhost
+    prefer-ip-address: false
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION:3600000}
+
+
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+  endpoint:
+    health:
+      show-details: always
