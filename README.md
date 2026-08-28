@@ -435,3 +435,34 @@ Each day includes:
 - 📌 [Day-18](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-18)
 
 ---
+
+### Day 19 – Microservices Architecture & Fundoo Notes Migration
+**Date:** 26-August-2026
+
+📖 Topics Covered
+
+- **Monolithic vs Microservices Architecture**
+- **Advantages of Microservices**
+- **Microservice Project Structure**
+- **Inter-Service Communication**
+- **API Gateway**
+- **API Gateway Routing**
+- **Service Discovery with Eureka**
+- **Centralized Application Monitoring with Admin Server**
+- **Fundoo Notes Microservices Architecture**
+
+💻 Practical Work
+
+- Explored the differences between **Monolithic and Microservices Architecture** and their advantages and trade-offs.
+- Started decomposing the **Fundoo Notes App** from a monolithic application into microservices.
+- Refactored the **Fundoo Notes App** into a Spring Boot microservices-based architecture.
+- Created the **API Gateway** for centralized request routing and entry-point management.
+- Created the **Eureka Server** for service discovery and registration of microservices.
+- Created the **Auth Service** for handling authentication-related functionality.
+- Created the **Admin Server** for centralized monitoring and management of microservices.
+
+🔗 Code Link:
+
+- 📌 [Day-19](https://github.com/avinash-kumar243/BridgeLabz-Training/tree/Refresher-Training/Day-19)
+
+---
