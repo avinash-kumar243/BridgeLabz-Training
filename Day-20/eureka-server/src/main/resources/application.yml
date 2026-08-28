@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+spring: 
+  application: 
+    name: eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false  # Eureka Server itself doesn't need to register with itself
+    fetch-registry: false   # Eureka Server doesn't need to fetch its registry to any microservice
